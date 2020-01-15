@@ -100,9 +100,6 @@
 				89198B4923CFB2B2009F8A31 /* SettingsScreen */,
 				89198B4823CFB2A3009F8A31 /* LoginScreen */,
 				89198B4423CFB279009F8A31 /* App */,
-				89198B1F23CFB244009F8A31 /* AppDelegate.swift */,
-				89198B2123CFB244009F8A31 /* SceneDelegate.swift */,
-				89198B2D23CFB246009F8A31 /* LaunchScreen.storyboard */,
 				89198B3023CFB246009F8A31 /* Info.plist */,
 				89198B2823CFB244009F8A31 /* SheltersAround.xcdatamodeld */,
 			);
@@ -121,6 +118,9 @@
 		89198B4423CFB279009F8A31 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				89198B1F23CFB244009F8A31 /* AppDelegate.swift */,
+				89198B2123CFB244009F8A31 /* SceneDelegate.swift */,
+				89198B2D23CFB246009F8A31 /* LaunchScreen.storyboard */,
 				89198B2B23CFB245009F8A31 /* Assets.xcassets */,
 				89198B4523CFB283009F8A31 /* Models */,
 			);
