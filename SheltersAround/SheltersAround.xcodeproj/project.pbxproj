@@ -13,7 +13,6 @@
 		89198B2C23CFB245009F8A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89198B2B23CFB245009F8A31 /* Assets.xcassets */; };
 		89198B2F23CFB246009F8A31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89198B2D23CFB246009F8A31 /* LaunchScreen.storyboard */; };
 		89198B3A23CFB246009F8A31 /* SheltersAroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B3923CFB246009F8A31 /* SheltersAroundTests.swift */; };
-		89198B4723CFB295009F8A31 /* dummy in Resources */ = {isa = PBXBuildFile; fileRef = 89198B4623CFB295009F8A31 /* dummy */; };
 		89198B4F23CFB300009F8A31 /* dummy1 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B4E23CFB300009F8A31 /* dummy1 */; };
 		89198B5123CFB30D009F8A31 /* dummy2 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5023CFB30D009F8A31 /* dummy2 */; };
 		89198B5323CFB319009F8A31 /* dummy3 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5223CFB319009F8A31 /* dummy3 */; };
@@ -21,6 +20,8 @@
 		89198B5723CFB334009F8A31 /* dummy5 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5623CFB334009F8A31 /* dummy5 */; };
 		89198B5B23CFB379009F8A31 /* LoginScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5A23CFB379009F8A31 /* LoginScreenViewController.storyboard */; };
 		89198B5D23CFB3C2009F8A31 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B5C23CFB3C2009F8A31 /* LoginScreenController.swift */; };
+		89198B6123CFB7BA009F8A31 /* PaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B6023CFB7BA009F8A31 /* PaymentTests.swift */; };
+		89198B6323CFB934009F8A31 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B6223CFB934009F8A31 /* Payment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		89198B3523CFB246009F8A31 /* SheltersAroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheltersAroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89198B3923CFB246009F8A31 /* SheltersAroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheltersAroundTests.swift; sourceTree = "<group>"; };
 		89198B3B23CFB246009F8A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89198B4623CFB295009F8A31 /* dummy */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy; sourceTree = "<group>"; };
 		89198B4E23CFB300009F8A31 /* dummy1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy1; sourceTree = "<group>"; };
 		89198B5023CFB30D009F8A31 /* dummy2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy2; sourceTree = "<group>"; };
 		89198B5223CFB319009F8A31 /* dummy3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy3; sourceTree = "<group>"; };
@@ -52,6 +52,8 @@
 		89198B5623CFB334009F8A31 /* dummy5 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy5; sourceTree = "<group>"; };
 		89198B5A23CFB379009F8A31 /* LoginScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreenViewController.storyboard; sourceTree = "<group>"; };
 		89198B5C23CFB3C2009F8A31 /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
+		89198B6023CFB7BA009F8A31 /* PaymentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTests.swift; sourceTree = "<group>"; };
+		89198B6223CFB934009F8A31 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		89198B3823CFB246009F8A31 /* SheltersAroundTests */ = {
 			isa = PBXGroup;
 			children = (
+				89198B5E23CFB790009F8A31 /* App */,
 				89198B3923CFB246009F8A31 /* SheltersAroundTests.swift */,
 				89198B3B23CFB246009F8A31 /* Info.plist */,
 			);
@@ -130,7 +133,7 @@
 		89198B4523CFB283009F8A31 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				89198B4623CFB295009F8A31 /* dummy */,
+				89198B6223CFB934009F8A31 /* Payment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +201,22 @@
 				89198B5C23CFB3C2009F8A31 /* LoginScreenController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		89198B5E23CFB790009F8A31 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				89198B5F23CFB79C009F8A31 /* Models */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		89198B5F23CFB79C009F8A31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89198B6023CFB7BA009F8A31 /* PaymentTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +305,6 @@
 				89198B5123CFB30D009F8A31 /* dummy2 in Resources */,
 				89198B4F23CFB300009F8A31 /* dummy1 in Resources */,
 				89198B2F23CFB246009F8A31 /* LaunchScreen.storyboard in Resources */,
-				89198B4723CFB295009F8A31 /* dummy in Resources */,
 				89198B2C23CFB245009F8A31 /* Assets.xcassets in Resources */,
 				89198B5323CFB319009F8A31 /* dummy3 in Resources */,
 				89198B5523CFB324009F8A31 /* dummy4 in Resources */,
@@ -311,6 +329,7 @@
 				89198B2A23CFB244009F8A31 /* SheltersAround.xcdatamodeld in Sources */,
 				89198B5D23CFB3C2009F8A31 /* LoginScreenController.swift in Sources */,
 				89198B2223CFB244009F8A31 /* SceneDelegate.swift in Sources */,
+				89198B6323CFB934009F8A31 /* Payment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89198B6123CFB7BA009F8A31 /* PaymentTests.swift in Sources */,
 				89198B3A23CFB246009F8A31 /* SheltersAroundTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
