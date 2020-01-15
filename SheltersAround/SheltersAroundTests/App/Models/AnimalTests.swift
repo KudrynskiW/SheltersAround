@@ -20,10 +20,10 @@ class AnimalTests: XCTestCase {
     let dummyMarks: [String] = ["Brown mouth", "Brown eyebrow"]
     let dummyDescription: String = "Beautiful old Labrador, black coat."
     
-    var dummyAnimal: Animal = Animal(UUID.init(), [], "", "", 0, "", [], "")
+    var dummyAnimal: Animal = Animal(UUID.init(), nil, "", "", 0, "", nil, "")
     
     
     override func setUp() {
-        dummyAnimal = Animal(dummyInstitutionId, dummyPictures, dummyType, dummyName, dummyAge, dummySize, dummyMarks, dummyDescription)
+        dummyAnimal = Animal(dummyInstitutionId, nil, dummyType, dummyName, dummyAge, dummySize, nil, dummyDescription)
     }
 }

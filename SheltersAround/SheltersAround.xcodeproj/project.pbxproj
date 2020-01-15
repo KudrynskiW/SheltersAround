@@ -23,6 +23,7 @@
 		89198B6123CFB7BA009F8A31 /* PaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B6023CFB7BA009F8A31 /* PaymentTests.swift */; };
 		89198B6323CFB934009F8A31 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B6223CFB934009F8A31 /* Payment.swift */; };
 		89198B6523CFBFE1009F8A31 /* AnimalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B6423CFBFE1009F8A31 /* AnimalTests.swift */; };
+		89198B6723CFC22B009F8A31 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B6623CFC22B009F8A31 /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		89198B6023CFB7BA009F8A31 /* PaymentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTests.swift; sourceTree = "<group>"; };
 		89198B6223CFB934009F8A31 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		89198B6423CFBFE1009F8A31 /* AnimalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTests.swift; sourceTree = "<group>"; };
+		89198B6623CFC22B009F8A31 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				89198B6223CFB934009F8A31 /* Payment.swift */,
+				89198B6623CFC22B009F8A31 /* Animal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				89198B5D23CFB3C2009F8A31 /* LoginScreenController.swift in Sources */,
 				89198B2223CFB244009F8A31 /* SceneDelegate.swift in Sources */,
 				89198B6323CFB934009F8A31 /* Payment.swift in Sources */,
+				89198B6723CFC22B009F8A31 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
