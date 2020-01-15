@@ -13,7 +13,6 @@
 		89198B2C23CFB245009F8A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89198B2B23CFB245009F8A31 /* Assets.xcassets */; };
 		89198B2F23CFB246009F8A31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89198B2D23CFB246009F8A31 /* LaunchScreen.storyboard */; };
 		89198B3A23CFB246009F8A31 /* SheltersAroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B3923CFB246009F8A31 /* SheltersAroundTests.swift */; };
-		89198B4723CFB295009F8A31 /* dummy in Resources */ = {isa = PBXBuildFile; fileRef = 89198B4623CFB295009F8A31 /* dummy */; };
 		89198B4F23CFB300009F8A31 /* dummy1 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B4E23CFB300009F8A31 /* dummy1 */; };
 		89198B5123CFB30D009F8A31 /* dummy2 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5023CFB30D009F8A31 /* dummy2 */; };
 		89198B5323CFB319009F8A31 /* dummy3 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5223CFB319009F8A31 /* dummy3 */; };
@@ -46,7 +45,6 @@
 		89198B3523CFB246009F8A31 /* SheltersAroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheltersAroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89198B3923CFB246009F8A31 /* SheltersAroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheltersAroundTests.swift; sourceTree = "<group>"; };
 		89198B3B23CFB246009F8A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89198B4623CFB295009F8A31 /* dummy */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy; sourceTree = "<group>"; };
 		89198B4E23CFB300009F8A31 /* dummy1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy1; sourceTree = "<group>"; };
 		89198B5023CFB30D009F8A31 /* dummy2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy2; sourceTree = "<group>"; };
 		89198B5223CFB319009F8A31 /* dummy3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy3; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 		89198B4523CFB283009F8A31 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				89198B4623CFB295009F8A31 /* dummy */,
 				89198B6223CFB934009F8A31 /* Payment.swift */,
 			);
 			path = Models;
@@ -308,7 +305,6 @@
 				89198B5123CFB30D009F8A31 /* dummy2 in Resources */,
 				89198B4F23CFB300009F8A31 /* dummy1 in Resources */,
 				89198B2F23CFB246009F8A31 /* LaunchScreen.storyboard in Resources */,
-				89198B4723CFB295009F8A31 /* dummy in Resources */,
 				89198B2C23CFB245009F8A31 /* Assets.xcassets in Resources */,
 				89198B5323CFB319009F8A31 /* dummy3 in Resources */,
 				89198B5523CFB324009F8A31 /* dummy4 in Resources */,

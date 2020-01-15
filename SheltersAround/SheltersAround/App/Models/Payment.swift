@@ -15,7 +15,7 @@ struct Payment {
     let institutionId: UUID
     let animalId: UUID?
     
-    init(_ amount: Double,_ userId: UUID,_ institutionId: UUID,_ animalId: UUID?) {
+    init(_ amount: Double,_ userId: UUID,_ institutionId: UUID,_ animalId: UUID? = nil) {
         self.id = UUID.init()
         self.amount = amount
         self.userId = userId
