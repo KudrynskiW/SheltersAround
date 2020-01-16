@@ -19,9 +19,10 @@ class UserTests: XCTestCase {
     let dummyPayments: [Payment] = [Payment(10.0, UUID.init(), UUID.init()),
                                     Payment(15.0, UUID.init(), UUID.init())]
     
-    var dummyUser = User("", "", [], [])
+    var dummyUser = User("", "")
     
     override func setUp() {
-        dummyUser = User(dummyEmail, dummyPassword, [], [])
+        dummyUser = User(dummyEmail, dummyPassword)
+        
     }
 }
