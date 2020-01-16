@@ -25,6 +25,7 @@
 		89198B6723CFC22B009F8A31 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B6623CFC22B009F8A31 /* Animal.swift */; };
 		892A01EE23D0CC8700660BCE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A01ED23D0CC8700660BCE /* Address.swift */; };
 		892A01F023D0CF7000660BCE /* ContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A01EF23D0CF7000660BCE /* ContactTests.swift */; };
+		892A01F223D0D02800660BCE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A01F123D0D02800660BCE /* Contact.swift */; };
 		898CFB2F23D0B59C006A8069 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB2E23D0B59C006A8069 /* UserTests.swift */; };
 		898CFB3123D0B72B006A8069 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB3023D0B72B006A8069 /* User.swift */; };
 		898CFB3323D0BD7A006A8069 /* AddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB3223D0BD7A006A8069 /* AddressTests.swift */; };
@@ -63,6 +64,7 @@
 		89198B6623CFC22B009F8A31 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		892A01ED23D0CC8700660BCE /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		892A01EF23D0CF7000660BCE /* ContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTests.swift; sourceTree = "<group>"; };
+		892A01F123D0D02800660BCE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		898CFB2E23D0B59C006A8069 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		898CFB3023D0B72B006A8069 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		898CFB3223D0BD7A006A8069 /* AddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTests.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				89198B6623CFC22B009F8A31 /* Animal.swift */,
 				898CFB3023D0B72B006A8069 /* User.swift */,
 				892A01ED23D0CC8700660BCE /* Address.swift */,
+				892A01F123D0D02800660BCE /* Contact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892A01F223D0D02800660BCE /* Contact.swift in Sources */,
 				89198B2023CFB244009F8A31 /* AppDelegate.swift in Sources */,
 				89198B2A23CFB244009F8A31 /* SheltersAround.xcdatamodeld in Sources */,
 				89198B5D23CFB3C2009F8A31 /* LoginScreenController.swift in Sources */,
