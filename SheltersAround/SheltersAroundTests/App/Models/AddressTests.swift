@@ -17,7 +17,7 @@ class AddressTests: XCTestCase {
     let dummyPostalCode: String = "00-123"
     let dummyCountry: String = "Poland"
     
-    var dummyAddress = Address("", "", "", "", "")
+    var dummyAddress: Address = Address("", "", "", "", "")
     
     override func setUp() {
         dummyAddress = Address(dummyStreetName, dummyStreetNumber, dummyCity, dummyPostalCode, dummyCountry)
