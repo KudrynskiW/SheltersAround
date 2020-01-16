@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Animal {
+struct Animal: Equatable {
     let id: UUID
     let institutionId: UUID
     var pictures: [UIImage]?
