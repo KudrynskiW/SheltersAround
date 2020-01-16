@@ -20,4 +20,22 @@ class ContactTests: XCTestCase {
     override func setUp() {
         dummyContact = Contact(nil, dummyPhoneNumbers, dummyEmailAddress)
     }
+    
+    func test_didContactPersonIsEmptyBeforeAssigned_shouldReturnTrue() {
+        XCTAssertNil(dummyContact.contactPerson)
+    }
+    
+    func test_didContactPersonHasBeenAssignedCorrectly_shouldReturnTrue() {
+        dummyContact.contactPerson = dummyContactPerson
+        
+        XCTAssertEqual(dummyContactPerson, dummyContact.contactPerson)
+    }
+    
+    func test_didPhoneNumberHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyPhoneNumbers, dummyContact.phoneNumbers)
+    }
+    
+    func test_didEmailAddressHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyEmailAddress, dummyContact.emailAddress)
+    }
 }
