@@ -22,4 +22,24 @@ class AddressTests: XCTestCase {
     override func setUp() {
         dummyAddress = Address(dummyStreetName, dummyStreetNumber, dummyCity, dummyPostalCode, dummyCountry)
     }
+    
+    func test_didStreetNameHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyStreetName, dummyAddress.streetName)
+    }
+    
+    func test_didStreetNumberHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyStreetNumber, dummyAddress.streetNumber)
+    }
+    
+    func test_didCityHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyCity, dummyAddress.city)
+    }
+    
+    func test_didPostalCodeHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyPostalCode, dummyAddress.postalCode)
+    }
+    
+    func test_didCountryHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyCountry, dummyAddress.country)
+    }
 }
