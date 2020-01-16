@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Contact {
+struct Contact: Equatable {
     var contactPerson: String?
     var phoneNumbers: [String]
     var emailAddress: String
