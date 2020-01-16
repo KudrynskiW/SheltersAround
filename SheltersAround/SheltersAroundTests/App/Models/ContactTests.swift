@@ -15,7 +15,7 @@ class ContactTests: XCTestCase {
     let dummyPhoneNumbers: [String] = ["123456789", "12122323"]
     let dummyEmailAddress: String = "example@email.com"
     
-    var dummyContact = Contact(nil, [""] , "")
+    var dummyContact: Contact = Contact(nil, [""] , "")
     
     override func setUp() {
         dummyContact = Contact(nil, dummyPhoneNumbers, dummyEmailAddress)
