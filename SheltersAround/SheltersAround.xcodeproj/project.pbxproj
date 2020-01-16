@@ -28,6 +28,7 @@
 		892A01F223D0D02800660BCE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A01F123D0D02800660BCE /* Contact.swift */; };
 		89820BA723D0D7F50085F2F5 /* BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BA623D0D7F50085F2F5 /* BankTests.swift */; };
 		89820BA923D0D8CF0085F2F5 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BA823D0D8CF0085F2F5 /* Bank.swift */; };
+		89820BAB23D0DDB40085F2F5 /* InstitutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BAA23D0DDB40085F2F5 /* InstitutionTests.swift */; };
 		898CFB2F23D0B59C006A8069 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB2E23D0B59C006A8069 /* UserTests.swift */; };
 		898CFB3123D0B72B006A8069 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB3023D0B72B006A8069 /* User.swift */; };
 		898CFB3323D0BD7A006A8069 /* AddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB3223D0BD7A006A8069 /* AddressTests.swift */; };
@@ -69,6 +70,7 @@
 		892A01F123D0D02800660BCE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		89820BA623D0D7F50085F2F5 /* BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTests.swift; sourceTree = "<group>"; };
 		89820BA823D0D8CF0085F2F5 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		89820BAA23D0DDB40085F2F5 /* InstitutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionTests.swift; sourceTree = "<group>"; };
 		898CFB2E23D0B59C006A8069 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		898CFB3023D0B72B006A8069 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		898CFB3223D0BD7A006A8069 /* AddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTests.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				898CFB3223D0BD7A006A8069 /* AddressTests.swift */,
 				892A01EF23D0CF7000660BCE /* ContactTests.swift */,
 				89820BA623D0D7F50085F2F5 /* BankTests.swift */,
+				89820BAA23D0DDB40085F2F5 /* InstitutionTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				89820BA723D0D7F50085F2F5 /* BankTests.swift in Sources */,
 				89198B6123CFB7BA009F8A31 /* PaymentTests.swift in Sources */,
 				892A01F023D0CF7000660BCE /* ContactTests.swift in Sources */,
+				89820BAB23D0DDB40085F2F5 /* InstitutionTests.swift in Sources */,
 				898CFB3323D0BD7A006A8069 /* AddressTests.swift in Sources */,
 				89198B6523CFBFE1009F8A31 /* AnimalTests.swift in Sources */,
 			);
