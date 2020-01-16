@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Payment {
+struct Payment: Equatable {
     let id: UUID
     let amount: Double
     let userId: UUID

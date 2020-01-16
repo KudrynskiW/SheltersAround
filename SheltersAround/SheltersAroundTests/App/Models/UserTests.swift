@@ -23,6 +23,43 @@ class UserTests: XCTestCase {
     
     override func setUp() {
         dummyUser = User(dummyEmail, dummyPassword)
+    }
+    
+    func test_didEmailHasBeenAssignedCorreclty_shouldReturnTrue() {
+        XCTAssertEqual(dummyEmail, dummyUser.email)
+    }
+    
+    func test_didPasswordHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyPassword, dummyUser.password)
+    }
+    
+    func test_didPhoneIsEmptyBeforeAssigned_shouldReturnTrue() {
+        XCTAssertNil(dummyUser.phone)
+    }
+    
+    func test_didPhoneHasBeenAssignedCorrectly_shouldReturnTrue() {
+        dummyUser.phone = dummyPhone
         
+        XCTAssertEqual(dummyPhone, dummyUser.phone)
+    }
+    
+    func test_didAnimalsIsEmptyBeforeAssigned_shouldReturnTrue() {
+        XCTAssertEqual([], dummyUser.animals)
+    }
+    
+    func test_didAnimalsHasBeenAssignedCorrectly_shouldReturnTrue() {
+        dummyUser.animals = dummyAnimals
+        
+        XCTAssertEqual(dummyAnimals, dummyUser.animals)
+    }
+    
+    func test_didPaymentsIsEmptyBeforeAssigned_shouldReturnTrue() {
+        XCTAssertEqual([], dummyUser.payments)
+    }
+    
+    func test_didPaymentsHasBeenAssignedCorrectly_shouldReturnTrue() {
+        dummyUser.payments = dummyPayments
+        
+        XCTAssertEqual(dummyPayments, dummyUser.payments)
     }
 }
