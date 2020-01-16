@@ -19,4 +19,16 @@ class BankTests: XCTestCase {
     override func setUp() {
         dummyBank = Bank(dummyAccountHolderName, dummyAccountHolderAddress, dummyAccountNumber)
     }
+    
+    func test_didAccountHolderNameHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyAccountHolderName, dummyBank.accountHolderName)
+    }
+    
+    func test_didAccountHolderAddressHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyAccountHolderAddress, dummyBank.accountHolderAddress)
+    }
+    
+    func test_didAccountNumberHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyAccountNumber, dummyBank.accountNumber)
+    }
 }
