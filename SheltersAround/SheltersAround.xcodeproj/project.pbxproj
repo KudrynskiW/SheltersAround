@@ -26,6 +26,7 @@
 		892A01EE23D0CC8700660BCE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A01ED23D0CC8700660BCE /* Address.swift */; };
 		892A01F023D0CF7000660BCE /* ContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A01EF23D0CF7000660BCE /* ContactTests.swift */; };
 		892A01F223D0D02800660BCE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A01F123D0D02800660BCE /* Contact.swift */; };
+		8956CBD423D4AEFF001010F9 /* LoginScreenControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */; };
 		89820BA723D0D7F50085F2F5 /* BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BA623D0D7F50085F2F5 /* BankTests.swift */; };
 		89820BA923D0D8CF0085F2F5 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BA823D0D8CF0085F2F5 /* Bank.swift */; };
 		89820BAB23D0DDB40085F2F5 /* InstitutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BAA23D0DDB40085F2F5 /* InstitutionTests.swift */; };
@@ -69,6 +70,7 @@
 		892A01ED23D0CC8700660BCE /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		892A01EF23D0CF7000660BCE /* ContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTests.swift; sourceTree = "<group>"; };
 		892A01F123D0D02800660BCE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenControllerTests.swift; sourceTree = "<group>"; };
 		89820BA623D0D7F50085F2F5 /* BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTests.swift; sourceTree = "<group>"; };
 		89820BA823D0D8CF0085F2F5 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		89820BAA23D0DDB40085F2F5 /* InstitutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionTests.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		89198B3823CFB246009F8A31 /* SheltersAroundTests */ = {
 			isa = PBXGroup;
 			children = (
+				8956CBD223D4AEE4001010F9 /* LoginScreen */,
 				89198B5E23CFB790009F8A31 /* App */,
 				89198B3B23CFB246009F8A31 /* Info.plist */,
 			);
@@ -250,6 +253,14 @@
 				89820BAA23D0DDB40085F2F5 /* InstitutionTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8956CBD223D4AEE4001010F9 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */,
+			);
+			path = LoginScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +393,7 @@
 				892A01F023D0CF7000660BCE /* ContactTests.swift in Sources */,
 				89820BAB23D0DDB40085F2F5 /* InstitutionTests.swift in Sources */,
 				898CFB3323D0BD7A006A8069 /* AddressTests.swift in Sources */,
+				8956CBD423D4AEFF001010F9 /* LoginScreenControllerTests.swift in Sources */,
 				89198B6523CFBFE1009F8A31 /* AnimalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
