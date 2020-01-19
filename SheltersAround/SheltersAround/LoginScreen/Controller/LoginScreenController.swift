@@ -30,9 +30,6 @@ class LoginScreenController: UIViewController {
     }
     
     func setupView() {
-        setupTextField(loginTextField)
-        setupTextField(passwordTextField)
-        
         setupButtonStyle(registerButton)
         setupButtonStyle(loginButton)
         setupButtonStyle(guestButton)
@@ -43,14 +40,4 @@ class LoginScreenController: UIViewController {
         button.layer.borderWidth = 1
         button.layer.borderColor = button.titleLabel?.textColor.cgColor
     }
-    
-    fileprivate func setupTextField(_ textField: UITextField) {
-        let blueColor = UIColor.systemBlue
-        textField.layer.borderColor = blueColor.cgColor
-        textField.textColor = blueColor
-        textField.layer.borderWidth = 1
-        textField.layer.cornerRadius = 5
-    }
-    
-    
 }

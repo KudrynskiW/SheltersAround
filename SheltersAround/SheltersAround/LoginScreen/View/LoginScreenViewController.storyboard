@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generic-image-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="74P-b7-qc0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo250x250" translatesAutoresizingMaskIntoConstraints="NO" id="74P-b7-qc0">
                                 <rect key="frame" x="82" y="118" width="250" height="250"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email here.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpc-GO-4JK">
@@ -108,6 +108,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="generic-image-placeholder" width="250" height="250"/>
+        <image name="Logo250x250" width="250" height="250"/>
     </resources>
 </document>
