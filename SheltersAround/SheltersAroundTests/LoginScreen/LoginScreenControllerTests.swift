@@ -11,5 +11,17 @@ import XCTest
 
 @testable import SheltersAround
 class LoginScreenControllerTests: XCTestCase {
+    var sut: LoginScreenController?
     
+    override func setUp() {
+        sut = LoginScreenController()
+        sut?.viewDidLoad()
+    }
+    
+    
+    func test_didViewTitleHasBeenLoadedCorreclty_shouldReturnTrue() {
+        XCTAssertEqual("Login Screen", sut!.title)
+    }
+
+
 }
