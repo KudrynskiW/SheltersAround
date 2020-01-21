@@ -55,7 +55,7 @@
 		89198B2E23CFB246009F8A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89198B3023CFB246009F8A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89198B3523CFB246009F8A31 /* SheltersAroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheltersAroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89198B3B23CFB246009F8A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89198B3B23CFB246009F8A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SheltersAroundTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		89198B4E23CFB300009F8A31 /* dummy1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy1; sourceTree = "<group>"; };
 		89198B5023CFB30D009F8A31 /* dummy2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy2; sourceTree = "<group>"; };
 		89198B5223CFB319009F8A31 /* dummy3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy3; sourceTree = "<group>"; };
@@ -119,6 +119,8 @@
 		89198B1E23CFB244009F8A31 /* SheltersAround */ = {
 			isa = PBXGroup;
 			children = (
+				89198B3B23CFB246009F8A31 /* Info.plist */,
+				89198B5E23CFB790009F8A31 /* App */,
 				89198B4D23CFB2F0009F8A31 /* AnimalDetailsScreen */,
 				89198B4C23CFB2C6009F8A31 /* InstitutionDetailsScreen */,
 				89198B4B23CFB2BD009F8A31 /* CatalogScreen */,
@@ -136,8 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				8956CBD223D4AEE4001010F9 /* LoginScreen */,
-				89198B5E23CFB790009F8A31 /* App */,
-				89198B3B23CFB246009F8A31 /* Info.plist */,
 			);
 			path = SheltersAroundTests;
 			sourceTree = "<group>";
@@ -238,8 +238,9 @@
 			children = (
 				89198B5F23CFB79C009F8A31 /* Models */,
 			);
-			path = App;
-			sourceTree = "<group>";
+			name = App;
+			path = SheltersAroundTests/App;
+			sourceTree = SOURCE_ROOT;
 		};
 		89198B5F23CFB79C009F8A31 /* Models */ = {
 			isa = PBXGroup;
