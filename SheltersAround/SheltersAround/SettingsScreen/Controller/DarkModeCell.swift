@@ -14,6 +14,7 @@ class DarkModeCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        titleLabel.text = "DARK MODE"
         
         if(self.traitCollection.userInterfaceStyle == .dark) {
             modeSwitch.isOn = true
@@ -26,6 +27,7 @@ class DarkModeCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
+    
     @IBAction func switchedSwitch(_ sender: Any) {
         switch modeSwitch.isOn {
         case true:
