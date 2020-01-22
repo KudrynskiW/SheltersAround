@@ -81,10 +81,10 @@ Wojciech &gt;wojciech@kudrynski.pl&lt;</string>
             </objects>
             <point key="canvasLocation" x="1731" y="47"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--SettingsScreenView-->
         <scene sceneID="5sF-3p-dRT">
             <objects>
-                <viewControllerPlaceholder id="5ts-SB-GFg" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SettingsScreenView" id="5ts-SB-GFg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QM7-54-hdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1730" y="161"/>
