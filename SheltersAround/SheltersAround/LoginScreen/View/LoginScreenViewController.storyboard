@@ -7,35 +7,93 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginScreen-->
         <scene sceneID="VAU-Ln-17p">
             <objects>
-                <viewController id="rNT-UW-sU9" sceneMemberID="viewController">
+                <viewController title="LoginScreen" id="rNT-UW-sU9" customClass="LoginScreenController" customModule="SheltersAround" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGH-pP-Wek">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrS-TT-WSo">
-                                <rect key="frame" x="186" y="268" width="39" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo250x250" translatesAutoresizingMaskIntoConstraints="NO" id="74P-b7-qc0">
+                                <rect key="frame" x="82" y="118" width="250" height="250"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email here.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpc-GO-4JK">
+                                <rect key="frame" x="30" y="398" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password here.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QaT-d2-ekc">
+                                <rect key="frame" x="30" y="440" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpk-QO-hfo">
+                                <rect key="frame" x="283" y="475" width="101" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Forgot password?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQI-wQ-41L">
+                                <rect key="frame" x="30" y="722" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="REGISTER">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTS-dQ-EsX">
+                                <rect key="frame" x="30" y="766" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="LOGIN"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dll-eh-xcm">
+                                <rect key="frame" x="30" y="810" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CONTINUE AS GUEST"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Dll-eh-xcm" secondAttribute="bottom" constant="50" id="9Fj-GD-QZ3"/>
+                            <constraint firstItem="ISL-sS-UxC" firstAttribute="trailing" secondItem="Jpk-QO-hfo" secondAttribute="trailing" constant="30" id="CqM-cQ-Cyi"/>
+                            <constraint firstItem="ISL-sS-UxC" firstAttribute="trailing" secondItem="Dll-eh-xcm" secondAttribute="trailing" constant="30" id="GEA-LP-WYZ"/>
+                            <constraint firstItem="uTS-dQ-EsX" firstAttribute="leading" secondItem="ISL-sS-UxC" secondAttribute="leading" constant="30" id="Gmh-zm-s5e"/>
+                            <constraint firstItem="Jpk-QO-hfo" firstAttribute="top" secondItem="QaT-d2-ekc" secondAttribute="bottom" constant="1" id="HYT-8t-4V5"/>
+                            <constraint firstItem="QaT-d2-ekc" firstAttribute="top" secondItem="fpc-GO-4JK" secondAttribute="bottom" constant="8" id="S3k-ma-xmn"/>
+                            <constraint firstItem="rQI-wQ-41L" firstAttribute="leading" secondItem="ISL-sS-UxC" secondAttribute="leading" constant="30" id="VqF-yZ-SED"/>
+                            <constraint firstItem="QaT-d2-ekc" firstAttribute="leading" secondItem="ISL-sS-UxC" secondAttribute="leading" constant="30" id="dUt-QP-jak"/>
+                            <constraint firstItem="74P-b7-qc0" firstAttribute="top" secondItem="ISL-sS-UxC" secondAttribute="top" constant="30" id="dYj-ED-xxl"/>
+                            <constraint firstItem="ISL-sS-UxC" firstAttribute="trailing" secondItem="fpc-GO-4JK" secondAttribute="trailing" constant="30" id="efa-hw-i7o"/>
+                            <constraint firstItem="ISL-sS-UxC" firstAttribute="trailing" secondItem="QaT-d2-ekc" secondAttribute="trailing" constant="30" id="fW8-3D-cYw"/>
+                            <constraint firstItem="ISL-sS-UxC" firstAttribute="trailing" secondItem="rQI-wQ-41L" secondAttribute="trailing" constant="30" id="fzp-T0-jfy"/>
+                            <constraint firstItem="fpc-GO-4JK" firstAttribute="leading" secondItem="ISL-sS-UxC" secondAttribute="leading" constant="30" id="l0b-w3-FQk"/>
+                            <constraint firstItem="Dll-eh-xcm" firstAttribute="leading" secondItem="ISL-sS-UxC" secondAttribute="leading" constant="30" id="lHs-Ud-yNQ"/>
+                            <constraint firstItem="Dll-eh-xcm" firstAttribute="top" secondItem="uTS-dQ-EsX" secondAttribute="bottom" constant="8" id="sTd-8n-znx"/>
+                            <constraint firstItem="uTS-dQ-EsX" firstAttribute="top" secondItem="rQI-wQ-41L" secondAttribute="bottom" constant="8" id="sdO-TE-NiJ"/>
+                            <constraint firstItem="ISL-sS-UxC" firstAttribute="trailing" secondItem="uTS-dQ-EsX" secondAttribute="trailing" constant="30" id="vFR-Ba-z47"/>
+                            <constraint firstItem="74P-b7-qc0" firstAttribute="leading" secondItem="ISL-sS-UxC" secondAttribute="leading" constant="82" id="xFT-Wi-4OH"/>
+                            <constraint firstItem="fpc-GO-4JK" firstAttribute="top" secondItem="74P-b7-qc0" secondAttribute="bottom" constant="30" id="yVx-c3-e7F"/>
+                            <constraint firstItem="ISL-sS-UxC" firstAttribute="trailing" secondItem="74P-b7-qc0" secondAttribute="trailing" constant="82" id="zDF-aX-fCU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ISL-sS-UxC"/>
                     </view>
                     <navigationItem key="navigationItem" id="5qI-hl-02R"/>
+                    <connections>
+                        <outlet property="guestButton" destination="Dll-eh-xcm" id="qP2-3Y-UOA"/>
+                        <outlet property="loginButton" destination="uTS-dQ-EsX" id="vfp-cX-aMw"/>
+                        <outlet property="loginTextField" destination="fpc-GO-4JK" id="yOx-Va-pGK"/>
+                        <outlet property="logoImage" destination="74P-b7-qc0" id="Fnm-UI-kYA"/>
+                        <outlet property="passwordTextField" destination="QaT-d2-ekc" id="j2V-LL-J1a"/>
+                        <outlet property="registerButton" destination="rQI-wQ-41L" id="Q6K-4l-X3V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oY1-RS-iVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71" y="92"/>
+            <point key="canvasLocation" x="69.565217391304358" y="91.741071428571431"/>
         </scene>
-        <!--Login Sceen-->
+        <!--Navigation Controller-->
         <scene sceneID="her-Sw-zve">
             <objects>
-                <navigationController title="Login Sceen" id="3VV-pd-yhk" sceneMemberID="viewController">
+                <navigationController id="3VV-pd-yhk" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c5a-eb-GKF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -49,4 +107,7 @@
             <point key="canvasLocation" x="-720" y="92"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo250x250" width="250" height="250"/>
+    </resources>
 </document>
