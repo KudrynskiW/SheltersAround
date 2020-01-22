@@ -29,6 +29,8 @@
 		8933F32F23D8A57400695D99 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F32823D8A57400695D99 /* UserTests.swift */; };
 		8933F33023D8A57400695D99 /* ContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F32923D8A57400695D99 /* ContactTests.swift */; };
 		8933F33123D8A57400695D99 /* BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F32A23D8A57400695D99 /* BankTests.swift */; };
+		8933F33523D8A72200695D99 /* SettingsScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8933F33423D8A72200695D99 /* SettingsScreenView.storyboard */; };
+		8933F33723D8A76200695D99 /* SettingsScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F33623D8A76200695D99 /* SettingsScreenController.swift */; };
 		8956CBD423D4AEFF001010F9 /* LoginScreenControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */; };
 		895A740623D75B65006BF8C2 /* HomeScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895A740523D75B65006BF8C2 /* HomeScreenView.storyboard */; };
 		895A740823D75B91006BF8C2 /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A740723D75B91006BF8C2 /* HomeScreenController.swift */; };
@@ -75,6 +77,8 @@
 		8933F32823D8A57400695D99 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		8933F32923D8A57400695D99 /* ContactTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTests.swift; sourceTree = "<group>"; };
 		8933F32A23D8A57400695D99 /* BankTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankTests.swift; sourceTree = "<group>"; };
+		8933F33423D8A72200695D99 /* SettingsScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreenView.storyboard; sourceTree = "<group>"; };
+		8933F33623D8A76200695D99 /* SettingsScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenController.swift; sourceTree = "<group>"; };
 		8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenControllerTests.swift; sourceTree = "<group>"; };
 		895A740523D75B65006BF8C2 /* HomeScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenView.storyboard; sourceTree = "<group>"; };
 		895A740723D75B91006BF8C2 /* HomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 		89198B4923CFB2B2009F8A31 /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8933F33223D8A6DA00695D99 /* Controller */,
+				8933F33323D8A6EE00695D99 /* View */,
 				89198B5623CFB334009F8A31 /* dummy5 */,
 			);
 			path = SettingsScreen;
@@ -259,6 +265,22 @@
 				8933F32823D8A57400695D99 /* UserTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8933F33223D8A6DA00695D99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8933F33623D8A76200695D99 /* SettingsScreenController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8933F33323D8A6EE00695D99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8933F33423D8A72200695D99 /* SettingsScreenView.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8956CBD223D4AEE4001010F9 /* LoginScreen */ = {
@@ -380,6 +402,7 @@
 				89198B4F23CFB300009F8A31 /* dummy1 in Resources */,
 				89198B2F23CFB246009F8A31 /* LaunchScreen.storyboard in Resources */,
 				89198B2C23CFB245009F8A31 /* Assets.xcassets in Resources */,
+				8933F33523D8A72200695D99 /* SettingsScreenView.storyboard in Resources */,
 				89198B5323CFB319009F8A31 /* dummy3 in Resources */,
 				895A740623D75B65006BF8C2 /* HomeScreenView.storyboard in Resources */,
 			);
@@ -401,6 +424,7 @@
 			files = (
 				892A01F223D0D02800660BCE /* Contact.swift in Sources */,
 				89198B2023CFB244009F8A31 /* AppDelegate.swift in Sources */,
+				8933F33723D8A76200695D99 /* SettingsScreenController.swift in Sources */,
 				89198B2A23CFB244009F8A31 /* SheltersAround.xcdatamodeld in Sources */,
 				89198B5D23CFB3C2009F8A31 /* LoginScreenController.swift in Sources */,
 				89198B2223CFB244009F8A31 /* SceneDelegate.swift in Sources */,
