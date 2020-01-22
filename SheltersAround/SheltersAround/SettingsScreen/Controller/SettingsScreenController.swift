@@ -11,8 +11,8 @@ import UIKit
 
 class SettingsScreenController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var changePasswordButton: UIButton!
-    @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var changePasswordButton: BeautifulButton!
+    @IBOutlet weak var logoutButton: BeautifulButton!
     @IBOutlet weak var tabBar: NavigationTabBar!
     
     let viewTitle: String = "SETTINGS"
@@ -21,7 +21,14 @@ class SettingsScreenController: UIViewController {
         super.viewDidLoad()
         
         self.title = viewTitle
+        
+        tableView.register(UINib(nibName: "DarkModeCell", bundle: nil), forCellReuseIdentifier: "DarkModeCell")
         tableView.delegate = self
+        tableView.tableFooterView = UIView()
+        tableView.isScrollEnabled = false
+        
+        logoutButton.configure()
+        changePasswordButton.configure()
         
         tabBar.delegate = self
         tabBar.setupTabBar()
@@ -43,7 +50,9 @@ extension SettingsScreenController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell(style: .default, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DarkModeCell") as! DarkModeCell
+        cell.titleLabel.text = "DARK MODE"
+        return cell
     }
     
     
@@ -51,17 +60,16 @@ extension SettingsScreenController: UITableViewDataSource, UITableViewDelegate {
 
 extension SettingsScreenController: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-            switch item.tag {
-            case 0:
-                performSegue(withIdentifier: "HomeScreen", sender: self)
-                break
-            case 1:
-                performSegue(withIdentifier: "CatalogScreen", sender: self)
-                break
-            default:
-                break
-            }
+        print(item.tag)
+        switch item.tag {
+        case 0:
+            performSegue(withIdentifier: "HomeScreen", sender: self)
+            break
+        case 1:
+            performSegue(withIdentifier: "CatalogScreen", sender: self)
+            break
+        default:
+            break
         }
     }
 }

@@ -30,6 +30,9 @@
 		8933F33123D8A57400695D99 /* BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F32A23D8A57400695D99 /* BankTests.swift */; };
 		8933F33523D8A72200695D99 /* SettingsScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8933F33423D8A72200695D99 /* SettingsScreenView.storyboard */; };
 		8933F33723D8A76200695D99 /* SettingsScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F33623D8A76200695D99 /* SettingsScreenController.swift */; };
+		8933F33923D8B62700695D99 /* DarkModeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8933F33823D8B62700695D99 /* DarkModeCell.xib */; };
+		8933F33B23D8B66500695D99 /* DarkModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F33A23D8B66500695D99 /* DarkModeCell.swift */; };
+		8933F33D23D8B81C00695D99 /* BeautifulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F33C23D8B81C00695D99 /* BeautifulButton.swift */; };
 		8956CBD423D4AEFF001010F9 /* LoginScreenControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */; };
 		895A740623D75B65006BF8C2 /* HomeScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895A740523D75B65006BF8C2 /* HomeScreenView.storyboard */; };
 		895A740823D75B91006BF8C2 /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A740723D75B91006BF8C2 /* HomeScreenController.swift */; };
@@ -77,6 +80,9 @@
 		8933F32A23D8A57400695D99 /* BankTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankTests.swift; sourceTree = "<group>"; };
 		8933F33423D8A72200695D99 /* SettingsScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreenView.storyboard; sourceTree = "<group>"; };
 		8933F33623D8A76200695D99 /* SettingsScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenController.swift; sourceTree = "<group>"; };
+		8933F33823D8B62700695D99 /* DarkModeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DarkModeCell.xib; sourceTree = "<group>"; };
+		8933F33A23D8B66500695D99 /* DarkModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeCell.swift; sourceTree = "<group>"; };
+		8933F33C23D8B81C00695D99 /* BeautifulButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautifulButton.swift; sourceTree = "<group>"; };
 		8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenControllerTests.swift; sourceTree = "<group>"; };
 		895A740523D75B65006BF8C2 /* HomeScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenView.storyboard; sourceTree = "<group>"; };
 		895A740723D75B91006BF8C2 /* HomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
@@ -268,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				8933F33623D8A76200695D99 /* SettingsScreenController.swift */,
+				8933F33A23D8B66500695D99 /* DarkModeCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				8933F33423D8A72200695D99 /* SettingsScreenView.storyboard */,
+				8933F33823D8B62700695D99 /* DarkModeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				895A740A23D761E1006BF8C2 /* NavigationTabBar.swift */,
+				8933F33C23D8B81C00695D99 /* BeautifulButton.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -396,6 +405,7 @@
 				89198B5B23CFB379009F8A31 /* LoginScreenView.storyboard in Resources */,
 				89198B5123CFB30D009F8A31 /* dummy2 in Resources */,
 				89198B4F23CFB300009F8A31 /* dummy1 in Resources */,
+				8933F33923D8B62700695D99 /* DarkModeCell.xib in Resources */,
 				89198B2F23CFB246009F8A31 /* LaunchScreen.storyboard in Resources */,
 				89198B2C23CFB245009F8A31 /* Assets.xcassets in Resources */,
 				8933F33523D8A72200695D99 /* SettingsScreenView.storyboard in Resources */,
@@ -428,8 +438,10 @@
 				89198B6723CFC22B009F8A31 /* Animal.swift in Sources */,
 				89820BA923D0D8CF0085F2F5 /* Bank.swift in Sources */,
 				895A740B23D761E1006BF8C2 /* NavigationTabBar.swift in Sources */,
+				8933F33B23D8B66500695D99 /* DarkModeCell.swift in Sources */,
 				892A01EE23D0CC8700660BCE /* Address.swift in Sources */,
 				898CFB3123D0B72B006A8069 /* User.swift in Sources */,
+				8933F33D23D8B81C00695D99 /* BeautifulButton.swift in Sources */,
 				89820BAD23D0DFAD0085F2F5 /* Institution.swift in Sources */,
 				895A740823D75B91006BF8C2 /* HomeScreenController.swift in Sources */,
 			);

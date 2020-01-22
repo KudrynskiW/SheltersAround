@@ -13,31 +13,18 @@ class LoginScreenController: UIViewController {
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var registerButton: UIButton!
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var guestButton: UIButton!
+    @IBOutlet weak var registerButton: BeautifulButton!
+    @IBOutlet weak var loginButton: BeautifulButton!
+    @IBOutlet weak var guestButton: BeautifulButton!
     
     var viewTitle: String? = "LOGIN"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = viewTitle
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setupView()
-    }
-    
-    func setupView() {
-        setupButtonStyle(registerButton)
-        setupButtonStyle(loginButton)
-        setupButtonStyle(guestButton)
-    }
-    
-    fileprivate func setupButtonStyle(_ button: UIButton) {
-        button.layer.cornerRadius = 10
-        button.layer.borderWidth = 1
-        button.layer.borderColor = button.titleLabel?.textColor.cgColor
+        
+        registerButton.configure()
+        loginButton.configure()
+        guestButton.configure()
     }
 }
