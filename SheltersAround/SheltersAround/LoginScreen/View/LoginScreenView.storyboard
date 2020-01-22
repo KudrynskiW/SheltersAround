@@ -44,11 +44,17 @@
                                 <rect key="frame" x="30" y="766" width="354" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <segue destination="bq4-ac-yY7" kind="presentation" identifier="LoginSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="vhd-8U-MhA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dll-eh-xcm">
                                 <rect key="frame" x="30" y="810" width="354" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="CONTINUE AS GUEST"/>
+                                <connections>
+                                    <segue destination="bq4-ac-yY7" kind="presentation" identifier="GuestSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sPZ-oh-PoW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -90,6 +96,16 @@
             </objects>
             <point key="canvasLocation" x="69.565217391304358" y="91.741071428571431"/>
         </scene>
+        <!--HomeScreenView-->
+        <scene sceneID="uii-ZF-WvK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeScreenView" id="bq4-ac-yY7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vBF-m3-ZDL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8t-xt-9bb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="270"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="her-Sw-zve">
             <objects>
@@ -110,4 +126,7 @@
     <resources>
         <image name="Logo250x250" width="250" height="250"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vhd-8U-MhA"/>
+    </inferredMetricsTieBreakers>
 </document>

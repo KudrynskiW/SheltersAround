@@ -17,7 +17,7 @@ class LoginScreenController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var guestButton: UIButton!
     
-    var viewTitle: String? = "Login Screen"
+    var viewTitle: String? = "LOGIN"
 
     override func viewDidLoad() {
         super.viewDidLoad()
