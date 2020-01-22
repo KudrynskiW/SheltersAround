@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9nR-pi-37L">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Screen-->
+        <scene sceneID="NBe-LE-uYU">
+            <objects>
+                <viewController title="Home Screen" id="18S-rp-buA" customClass="HomeScreenController" customModule="SheltersAround" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cIH-dh-4F3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo250x250" translatesAutoresizingMaskIntoConstraints="NO" id="DB2-l9-7N4">
+                                <rect key="frame" x="132" y="108" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0hS-Pq-Nnj"/>
+                                    <constraint firstAttribute="height" constant="150" id="Crs-x4-ABq"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JE2-j0-ci3">
+                                <rect key="frame" x="20" y="266" width="374" height="341"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="341" id="cVm-i9-CIW"/>
+                                </constraints>
+                                <string key="text">Welcome in SheltersAround application!
+
+Please use Catalog option for browse Institutions registered in our database. You can go to Settings to change your Language, Password or enable Dark Mode in application.
+
+Have fun during helping pets!
+Wojciech &gt;wojciech@kudrynski.pl&lt;</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tabBar contentMode="scaleToFill" itemPositioning="fill" translatesAutoresizingMaskIntoConstraints="NO" id="X0k-rW-zMg" customClass="NavigationTabBar" customModule="SheltersAround" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="wEf-Ef-G1F"/>
+                                    <tabBarItem systemItem="more" id="WdS-Bf-LHi"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X0k-rW-zMg" firstAttribute="bottom" secondItem="I6Q-ew-B5l" secondAttribute="bottom" id="6mV-M2-sc1"/>
+                            <constraint firstItem="I6Q-ew-B5l" firstAttribute="trailing" secondItem="JE2-j0-ci3" secondAttribute="trailing" constant="20" id="FCQ-hc-zW6"/>
+                            <constraint firstItem="DB2-l9-7N4" firstAttribute="top" secondItem="I6Q-ew-B5l" secondAttribute="top" constant="20" id="H4G-8N-5sC"/>
+                            <constraint firstItem="X0k-rW-zMg" firstAttribute="trailing" secondItem="I6Q-ew-B5l" secondAttribute="trailing" id="Igl-gD-mhp"/>
+                            <constraint firstItem="JE2-j0-ci3" firstAttribute="top" secondItem="DB2-l9-7N4" secondAttribute="bottom" constant="8" id="InU-in-5xc"/>
+                            <constraint firstItem="I6Q-ew-B5l" firstAttribute="trailing" secondItem="DB2-l9-7N4" secondAttribute="trailing" constant="132" id="p9k-6Q-ryW"/>
+                            <constraint firstItem="JE2-j0-ci3" firstAttribute="leading" secondItem="I6Q-ew-B5l" secondAttribute="leading" constant="20" id="q4L-1q-1ki"/>
+                            <constraint firstItem="X0k-rW-zMg" firstAttribute="leading" secondItem="I6Q-ew-B5l" secondAttribute="leading" id="ygp-v8-TOd"/>
+                            <constraint firstItem="DB2-l9-7N4" firstAttribute="leading" secondItem="I6Q-ew-B5l" secondAttribute="leading" constant="132" id="zb5-Ek-1IW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I6Q-ew-B5l"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SmS-rx-Mkt"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="SmS-rx-Mkt" id="r37-1z-HKC"/>
+                        <outlet property="tabBar" destination="X0k-rW-zMg" id="PBd-dq-Sla"/>
+                        <segue destination="tKh-Rn-oQq" kind="presentation" identifier="CatalogScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="np8-wp-kHa"/>
+                        <segue destination="5ts-SB-GFg" kind="presentation" identifier="SettingsScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="pwu-Zd-VKN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bW-yU-YLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="wua-af-KT8">
+            <objects>
+                <viewControllerPlaceholder id="tKh-Rn-oQq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXg-If-bzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731" y="47"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="5sF-3p-dRT">
+            <objects>
+                <viewControllerPlaceholder id="5ts-SB-GFg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QM7-54-hdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730" y="161"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1CM-Ku-lQV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9nR-pi-37L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Nn-lC-bqR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="18S-rp-buA" kind="relationship" relationship="rootViewController" id="Unw-1q-m0c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dU1-me-Yyo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo250x250" width="250" height="250"/>
+    </resources>
+</document>
