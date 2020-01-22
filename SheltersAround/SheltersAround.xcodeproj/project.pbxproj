@@ -15,7 +15,6 @@
 		89198B4F23CFB300009F8A31 /* dummy1 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B4E23CFB300009F8A31 /* dummy1 */; };
 		89198B5123CFB30D009F8A31 /* dummy2 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5023CFB30D009F8A31 /* dummy2 */; };
 		89198B5323CFB319009F8A31 /* dummy3 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5223CFB319009F8A31 /* dummy3 */; };
-		89198B5723CFB334009F8A31 /* dummy5 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5623CFB334009F8A31 /* dummy5 */; };
 		89198B5B23CFB379009F8A31 /* LoginScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5A23CFB379009F8A31 /* LoginScreenView.storyboard */; };
 		89198B5D23CFB3C2009F8A31 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B5C23CFB3C2009F8A31 /* LoginScreenController.swift */; };
 		89198B6323CFB934009F8A31 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B6223CFB934009F8A31 /* Payment.swift */; };
@@ -62,7 +61,6 @@
 		89198B4E23CFB300009F8A31 /* dummy1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy1; sourceTree = "<group>"; };
 		89198B5023CFB30D009F8A31 /* dummy2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy2; sourceTree = "<group>"; };
 		89198B5223CFB319009F8A31 /* dummy3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy3; sourceTree = "<group>"; };
-		89198B5623CFB334009F8A31 /* dummy5 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy5; sourceTree = "<group>"; };
 		89198B5A23CFB379009F8A31 /* LoginScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreenView.storyboard; sourceTree = "<group>"; };
 		89198B5C23CFB3C2009F8A31 /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		89198B6223CFB934009F8A31 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 			children = (
 				8933F33223D8A6DA00695D99 /* Controller */,
 				8933F33323D8A6EE00695D99 /* View */,
-				89198B5623CFB334009F8A31 /* dummy5 */,
 			);
 			path = SettingsScreen;
 			sourceTree = "<group>";
@@ -396,7 +393,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89198B5723CFB334009F8A31 /* dummy5 in Resources */,
 				89198B5B23CFB379009F8A31 /* LoginScreenView.storyboard in Resources */,
 				89198B5123CFB30D009F8A31 /* dummy2 in Resources */,
 				89198B4F23CFB300009F8A31 /* dummy1 in Resources */,
