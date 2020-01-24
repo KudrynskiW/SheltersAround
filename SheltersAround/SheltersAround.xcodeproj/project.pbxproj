@@ -35,6 +35,8 @@
 		8933F33D23D8B81C00695D99 /* BeautifulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F33C23D8B81C00695D99 /* BeautifulButton.swift */; };
 		8933F33F23D8C59000695D99 /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F33E23D8C59000695D99 /* LanguageCell.swift */; };
 		8933F34123D8C5B900695D99 /* LanguageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8933F34023D8C5B900695D99 /* LanguageCell.xib */; };
+		895626DC23DB44D700B32FD8 /* InstitutionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895626DB23DB44D700B32FD8 /* InstitutionCell.swift */; };
+		895626DE23DB44E600B32FD8 /* InstitutionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895626DD23DB44E600B32FD8 /* InstitutionCell.xib */; };
 		8956CBD423D4AEFF001010F9 /* LoginScreenControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */; };
 		895A740623D75B65006BF8C2 /* HomeScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895A740523D75B65006BF8C2 /* HomeScreenView.storyboard */; };
 		895A740823D75B91006BF8C2 /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A740723D75B91006BF8C2 /* HomeScreenController.swift */; };
@@ -87,6 +89,8 @@
 		8933F33C23D8B81C00695D99 /* BeautifulButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautifulButton.swift; sourceTree = "<group>"; };
 		8933F33E23D8C59000695D99 /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguageCell.swift; path = SheltersAround/SettingsScreen/Controller/LanguageCell.swift; sourceTree = SOURCE_ROOT; };
 		8933F34023D8C5B900695D99 /* LanguageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageCell.xib; sourceTree = "<group>"; };
+		895626DB23DB44D700B32FD8 /* InstitutionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionCell.swift; sourceTree = "<group>"; };
+		895626DD23DB44E600B32FD8 /* InstitutionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstitutionCell.xib; sourceTree = "<group>"; };
 		8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenControllerTests.swift; sourceTree = "<group>"; };
 		895A740523D75B65006BF8C2 /* HomeScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenView.storyboard; sourceTree = "<group>"; };
 		895A740723D75B91006BF8C2 /* HomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 		89198B4B23CFB2BD009F8A31 /* CatalogScreen */ = {
 			isa = PBXGroup;
 			children = (
+				895626D923DB44A700B32FD8 /* Controller */,
+				895626DA23DB44B100B32FD8 /* View */,
 				89198B5223CFB319009F8A31 /* dummy3 */,
 			);
 			path = CatalogScreen;
@@ -290,6 +296,22 @@
 				8933F33423D8A72200695D99 /* SettingsScreenView.storyboard */,
 				8933F33823D8B62700695D99 /* DarkModeCell.xib */,
 				8933F34023D8C5B900695D99 /* LanguageCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		895626D923DB44A700B32FD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				895626DB23DB44D700B32FD8 /* InstitutionCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		895626DA23DB44B100B32FD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				895626DD23DB44E600B32FD8 /* InstitutionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,6 +440,7 @@
 				8933F33523D8A72200695D99 /* SettingsScreenView.storyboard in Resources */,
 				89198B5323CFB319009F8A31 /* dummy3 in Resources */,
 				895A740623D75B65006BF8C2 /* HomeScreenView.storyboard in Resources */,
+				895626DE23DB44E600B32FD8 /* InstitutionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +472,7 @@
 				8933F33B23D8B66500695D99 /* DarkModeCell.swift in Sources */,
 				892A01EE23D0CC8700660BCE /* Address.swift in Sources */,
 				898CFB3123D0B72B006A8069 /* User.swift in Sources */,
+				895626DC23DB44D700B32FD8 /* InstitutionCell.swift in Sources */,
 				8933F33D23D8B81C00695D99 /* BeautifulButton.swift in Sources */,
 				89820BAD23D0DFAD0085F2F5 /* Institution.swift in Sources */,
 				895A740823D75B91006BF8C2 /* HomeScreenController.swift in Sources */,
