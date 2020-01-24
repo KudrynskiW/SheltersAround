@@ -12,6 +12,7 @@ import XCTest
 
 class InstitutionTests: XCTestCase {
     let dummyLogo: UIImage? = UIImage()
+    let dummyForm: String = "TOZ"
     let dummyName: String = "Example Name"
     let dummyDescription: String = "Optional institution description."
     let dummyAddress: Address = Address("Street", "1a", "city", "00-123", "Country")
@@ -21,10 +22,10 @@ class InstitutionTests: XCTestCase {
         [ Animal(UUID.init(), nil, "Dog", "Nero", 12, "XL", nil, "Old lovely dog."),
           Animal(UUID.init(), nil, "Cat", "Kocur", 6, "M", nil, "Crazy cat.")]
     
-    var dummyInstitution: Institution = Institution(nil, "", "", Address("", "", "", "", ""), Contact(nil, [""], ""), nil, nil)
+    var dummyInstitution: Institution = Institution(nil, "", "", "", Address("", "", "", "", ""), Contact(nil, [""], ""), nil, nil)
     
     override func setUp() {
-        dummyInstitution = Institution(nil, dummyName, dummyDescription, dummyAddress, dummyContact, nil, nil)
+        dummyInstitution = Institution(nil, dummyName, dummyForm, dummyDescription, dummyAddress, dummyContact, nil, nil)
     }
     
     func test_didLogoIsEmptyBeforeAssigned_shouldReturnTrue() {
@@ -39,6 +40,10 @@ class InstitutionTests: XCTestCase {
     
     func test_didNameHasBeenAssignedCorrectly_shouldReturnTrue() {
         XCTAssertEqual(dummyName, dummyInstitution.name)
+    }
+    
+    func test_didFormHasBeenAssignedCorrectly_shouldReturnTrue() {
+        XCTAssertEqual(dummyForm, dummyInstitution.form)
     }
     
     func test_didDescriptionHasBeenAssignedCorrectly_shouldReturnTrue() {

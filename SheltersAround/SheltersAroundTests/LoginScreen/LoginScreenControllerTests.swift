@@ -22,6 +22,4 @@ class LoginScreenControllerTests: XCTestCase {
     func test_didViewTitleHasBeenLoadedCorreclty_shouldReturnTrue() {
         XCTAssertEqual("LOGIN", sut!.title)
     }
-
-
 }

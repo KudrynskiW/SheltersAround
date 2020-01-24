@@ -9,16 +9,26 @@
 import UIKit
 
 class InstitutionCell: UITableViewCell {
-
+    
+    @IBOutlet weak var institutionLogo: UIImageView!
+    @IBOutlet weak var institutionForm: UILabel!
+    @IBOutlet weak var institutionName: UILabel!
+    @IBOutlet weak var institutionDescription: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func configureCell(with institution: Institution) {
+        self.institutionLogo.image = institution.logo
+        self.institutionForm.text = institution.form
+        self.institutionName.text = institution.name
+        self.institutionDescription.text = institution.description
     }
 
 }
