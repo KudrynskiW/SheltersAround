@@ -12,6 +12,7 @@ import UIKit
 struct Institution {
     let id: UUID
     var logo: UIImage?
+    var form: String
     var name: String
     var description: String
     var address: Address
@@ -19,9 +20,10 @@ struct Institution {
     var bank: Bank?
     var animals: [Animal]?
     
-    init(_ logo: UIImage? = nil,_ name: String,_ description: String,_ address: Address,_ contact: Contact,_ bank: Bank? = nil,_ animals: [Animal]? = nil) {
+    init(_ logo: UIImage? = nil,_ name: String,_ form: String,_ description: String,_ address: Address,_ contact: Contact,_ bank: Bank? = nil,_ animals: [Animal]? = nil) {
         self.id = UUID.init()
         self.logo = logo
+        self.form = form
         self.name = name
         self.description = description
         self.address = address
