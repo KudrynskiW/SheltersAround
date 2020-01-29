@@ -9,4 +9,4 @@ Main purpose of project is to gather all Shelter-type Institutions in one place 
  * ShelersAround project can not be copied and/or distributed without the express
  * permission of Wojciech Kudrynski. Its possible to use code included in SheltersAround project
  * only in Non-Profit usage and with mark that creator of code is Wojciech Kudrynski
- *******************************************************/
+/*******************************************************/
