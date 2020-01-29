@@ -14,7 +14,6 @@
 		89198B2F23CFB246009F8A31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89198B2D23CFB246009F8A31 /* LaunchScreen.storyboard */; };
 		89198B4F23CFB300009F8A31 /* dummy1 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B4E23CFB300009F8A31 /* dummy1 */; };
 		89198B5123CFB30D009F8A31 /* dummy2 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5023CFB30D009F8A31 /* dummy2 */; };
-		89198B5323CFB319009F8A31 /* dummy3 in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5223CFB319009F8A31 /* dummy3 */; };
 		89198B5B23CFB379009F8A31 /* LoginScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89198B5A23CFB379009F8A31 /* LoginScreenView.storyboard */; };
 		89198B5D23CFB3C2009F8A31 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B5C23CFB3C2009F8A31 /* LoginScreenController.swift */; };
 		89198B6323CFB934009F8A31 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89198B6223CFB934009F8A31 /* Payment.swift */; };
@@ -35,6 +34,8 @@
 		8933F33D23D8B81C00695D99 /* BeautifulButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F33C23D8B81C00695D99 /* BeautifulButton.swift */; };
 		8933F33F23D8C59000695D99 /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933F33E23D8C59000695D99 /* LanguageCell.swift */; };
 		8933F34123D8C5B900695D99 /* LanguageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8933F34023D8C5B900695D99 /* LanguageCell.xib */; };
+		8949835823E1D3A700D350C4 /* CatalogScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8949835723E1D3A700D350C4 /* CatalogScreenController.swift */; };
+		8949835C23E1D4E600D350C4 /* CatalogScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8949835B23E1D4E600D350C4 /* CatalogScreenView.storyboard */; };
 		895626DC23DB44D700B32FD8 /* InstitutionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895626DB23DB44D700B32FD8 /* InstitutionCell.swift */; };
 		895626DE23DB44E600B32FD8 /* InstitutionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895626DD23DB44E600B32FD8 /* InstitutionCell.xib */; };
 		8956CBD423D4AEFF001010F9 /* LoginScreenControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */; };
@@ -67,7 +68,6 @@
 		89198B3523CFB246009F8A31 /* SheltersAroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheltersAroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89198B4E23CFB300009F8A31 /* dummy1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy1; sourceTree = "<group>"; };
 		89198B5023CFB30D009F8A31 /* dummy2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy2; sourceTree = "<group>"; };
-		89198B5223CFB319009F8A31 /* dummy3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = dummy3; sourceTree = "<group>"; };
 		89198B5A23CFB379009F8A31 /* LoginScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreenView.storyboard; sourceTree = "<group>"; };
 		89198B5C23CFB3C2009F8A31 /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		89198B6223CFB934009F8A31 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
@@ -89,6 +89,8 @@
 		8933F33C23D8B81C00695D99 /* BeautifulButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautifulButton.swift; sourceTree = "<group>"; };
 		8933F33E23D8C59000695D99 /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguageCell.swift; path = SheltersAround/SettingsScreen/Controller/LanguageCell.swift; sourceTree = SOURCE_ROOT; };
 		8933F34023D8C5B900695D99 /* LanguageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageCell.xib; sourceTree = "<group>"; };
+		8949835723E1D3A700D350C4 /* CatalogScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogScreenController.swift; sourceTree = "<group>"; };
+		8949835B23E1D4E600D350C4 /* CatalogScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatalogScreenView.storyboard; sourceTree = "<group>"; };
 		895626DB23DB44D700B32FD8 /* InstitutionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionCell.swift; sourceTree = "<group>"; };
 		895626DD23DB44E600B32FD8 /* InstitutionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstitutionCell.xib; sourceTree = "<group>"; };
 		8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenControllerTests.swift; sourceTree = "<group>"; };
@@ -221,7 +223,6 @@
 			children = (
 				895626D923DB44A700B32FD8 /* Controller */,
 				895626DA23DB44B100B32FD8 /* View */,
-				89198B5223CFB319009F8A31 /* dummy3 */,
 			);
 			path = CatalogScreen;
 			sourceTree = "<group>";
@@ -304,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				895626DB23DB44D700B32FD8 /* InstitutionCell.swift */,
+				8949835723E1D3A700D350C4 /* CatalogScreenController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				895626DD23DB44E600B32FD8 /* InstitutionCell.xib */,
+				8949835B23E1D4E600D350C4 /* CatalogScreenView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -436,9 +439,9 @@
 				8933F33923D8B62700695D99 /* DarkModeCell.xib in Resources */,
 				89198B2F23CFB246009F8A31 /* LaunchScreen.storyboard in Resources */,
 				8933F34123D8C5B900695D99 /* LanguageCell.xib in Resources */,
+				8949835C23E1D4E600D350C4 /* CatalogScreenView.storyboard in Resources */,
 				89198B2C23CFB245009F8A31 /* Assets.xcassets in Resources */,
 				8933F33523D8A72200695D99 /* SettingsScreenView.storyboard in Resources */,
-				89198B5323CFB319009F8A31 /* dummy3 in Resources */,
 				895A740623D75B65006BF8C2 /* HomeScreenView.storyboard in Resources */,
 				895626DE23DB44E600B32FD8 /* InstitutionCell.xib in Resources */,
 			);
@@ -468,6 +471,7 @@
 				89198B6323CFB934009F8A31 /* Payment.swift in Sources */,
 				89198B6723CFC22B009F8A31 /* Animal.swift in Sources */,
 				89820BA923D0D8CF0085F2F5 /* Bank.swift in Sources */,
+				8949835823E1D3A700D350C4 /* CatalogScreenController.swift in Sources */,
 				895A740B23D761E1006BF8C2 /* NavigationTabBar.swift in Sources */,
 				8933F33B23D8B66500695D99 /* DarkModeCell.swift in Sources */,
 				892A01EE23D0CC8700660BCE /* Address.swift in Sources */,
