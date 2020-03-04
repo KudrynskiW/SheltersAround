@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vid-MF-mfp" customClass="NavigationTabBar" customModule="SheltersAround" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem systemItem="favorites" id="cAD-OP-Abt"/>
@@ -38,7 +38,7 @@ Label</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KeH-LE-Ggd">
-                                <rect key="frame" x="0.0" y="228" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="227.5" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                                 <connections>
                                     <outlet property="delegate" destination="acl-EE-3Rn" id="YyQ-qT-zJf"/>
@@ -57,7 +57,7 @@ Label</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="duI-rq-mmo" firstAttribute="trailing" secondItem="nw5-XD-Ado" secondAttribute="trailing" id="23V-hw-21U"/>
-                            <constraint firstItem="vid-MF-mfp" firstAttribute="top" secondItem="nw5-XD-Ado" secondAttribute="bottom" constant="34" id="4oS-Em-X9U"/>
+                            <constraint firstItem="vid-MF-mfp" firstAttribute="top" secondItem="nw5-XD-Ado" secondAttribute="bottom" id="4oS-Em-X9U"/>
                             <constraint firstItem="1Qn-Bo-XI5" firstAttribute="top" secondItem="duI-rq-mmo" secondAttribute="top" constant="10" id="Bnf-eC-YBn"/>
                             <constraint firstItem="vid-MF-mfp" firstAttribute="leading" secondItem="duI-rq-mmo" secondAttribute="leading" id="MN2-Q3-WKB"/>
                             <constraint firstItem="vid-MF-mfp" firstAttribute="bottom" secondItem="duI-rq-mmo" secondAttribute="bottom" id="Nm6-LM-EQR"/>
