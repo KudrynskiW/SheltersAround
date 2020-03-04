@@ -39,7 +39,7 @@ Wojciech &gt;wojciech@kudrynski.pl&lt;</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <tabBar contentMode="scaleToFill" itemPositioning="fill" translatesAutoresizingMaskIntoConstraints="NO" id="X0k-rW-zMg" customClass="NavigationTabBar" customModule="SheltersAround" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem systemItem="favorites" id="wEf-Ef-G1F"/>
@@ -73,10 +73,10 @@ Wojciech &gt;wojciech@kudrynski.pl&lt;</string>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--CatalogScreenView-->
         <scene sceneID="wua-af-KT8">
             <objects>
-                <viewControllerPlaceholder id="tKh-Rn-oQq" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="CatalogScreenView" id="tKh-Rn-oQq" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXg-If-bzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1731" y="47"/>
