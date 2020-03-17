@@ -23,7 +23,7 @@ struct LoginScreen: View {
                     .padding(.top, self.userEditing ? 0 : UIScreen.main.bounds.height * 0.05)
                     .padding(.bottom, self.userEditing ? 0 : UIScreen.main.bounds.height * 0.1)
                     .foregroundColor(.blue)
-                
+                    
                 VStack {
                     HStack {
                         
@@ -77,7 +77,7 @@ struct LoginScreen: View {
                     Button(action: {
                         //
                     }) {
-                            NavigationLink(destination: HomeScreen(loggedUser: User("test"))) {
+                        NavigationLink(destination: HomeScreen(loggedUser: User(self.userEmail))) {
                                 LoginScreenButtonStyle(title: "ENTER AS GUEST", colorScheme: .blue)
                         }
                     }
