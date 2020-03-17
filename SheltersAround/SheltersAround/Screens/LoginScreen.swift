@@ -13,16 +13,23 @@ struct LoginScreen: View {
     @State private var userPassword = ""
     @State var userEditing = false
     @State var startOpacity = 0.0
+    @State var rotateImage = 0.0
+    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         NavigationView {
             VStack {
+                if(!self.userEditing) { Spacer() }
+                
                 Image("Logo250x250")
                     .resizable()
-                    .frame(width: UIScreen.main.bounds.width * 0.6, height: UIScreen.main.bounds.width * 0.6)
-                    .padding(.top, self.userEditing ? 0 : UIScreen.main.bounds.height * 0.05)
+                    .frame(width: UIScreen.main.bounds.width * 0.5, height: UIScreen.main.bounds.width * 0.5)
+                    .padding(.top, UIScreen.main.bounds.height * 0.05)
                     .padding(.bottom, self.userEditing ? 0 : UIScreen.main.bounds.height * 0.1)
                     .foregroundColor(.blue)
+                    .hueRotation(.degrees(self.rotateImage))
+                
+                //Spacer()
                     
                 VStack {
                     HStack {
@@ -60,7 +67,8 @@ struct LoginScreen: View {
                             Text("Forgot password?")
                         }
                     }
-                }.frame(width: UIScreen.main.bounds.width * 0.8)
+                }
+                .frame(width: UIScreen.main.bounds.width * 0.8)
                 
                 if(!self.userEditing) { Spacer() }
                 
@@ -77,14 +85,17 @@ struct LoginScreen: View {
                     Button(action: {
                         //
                     }) {
-                        NavigationLink(destination: HomeScreen(loggedUser: User(self.userEmail))) {
+                        NavigationLink(destination: HomeScreen(loggedUser: User("Guest"))) {
                                 LoginScreenButtonStyle(title: "ENTER AS GUEST", colorScheme: .blue)
                         }
                     }
                 }
                 .animation(.default)
                 
+                Spacer()
+                
                 if(self.userEditing) { Spacer() }
+                
             }
             .opacity(self.startOpacity)
             .onAppear {
@@ -92,6 +103,12 @@ struct LoginScreen: View {
                     self.startOpacity = 1
                 }
             }
+            .onReceive(timer) { _ in
+                withAnimation {
+                    self.rotateImage += 7
+                }
+            }
+            .edgesIgnoringSafeArea(.top)
         }
     }
 }

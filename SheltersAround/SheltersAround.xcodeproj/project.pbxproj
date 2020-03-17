@@ -26,6 +26,7 @@
 		8956CBD423D4AEFF001010F9 /* LoginScreenControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */; };
 		89820BA923D0D8CF0085F2F5 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BA823D0D8CF0085F2F5 /* Bank.swift */; };
 		89820BAD23D0DFAD0085F2F5 /* Institution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BAC23D0DFAD0085F2F5 /* Institution.swift */; };
+		8983BD8824211B5B003A30DF /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8983BD8724211B5B003A30DF /* SettingsScreen.swift */; };
 		898CFB3123D0B72B006A8069 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB3023D0B72B006A8069 /* User.swift */; };
 		89D37D952420A6570055C0DC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37D942420A6570055C0DC /* LoginScreen.swift */; };
 		89D37D972420DA7E0055C0DC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37D962420DA7E0055C0DC /* HomeScreen.swift */; };
@@ -65,6 +66,7 @@
 		8956CBD323D4AEFF001010F9 /* LoginScreenControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenControllerTests.swift; sourceTree = "<group>"; };
 		89820BA823D0D8CF0085F2F5 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		89820BAC23D0DFAD0085F2F5 /* Institution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Institution.swift; sourceTree = "<group>"; };
+		8983BD8724211B5B003A30DF /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		898CFB3023D0B72B006A8069 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		89D37D942420A6570055C0DC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		89D37D962420DA7E0055C0DC /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		89198B4823CFB2A3009F8A31 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8983BD8724211B5B003A30DF /* SettingsScreen.swift */,
 				89D37D962420DA7E0055C0DC /* HomeScreen.swift */,
 				89D37D942420A6570055C0DC /* LoginScreen.swift */,
 			);
@@ -299,6 +302,7 @@
 				89198B6323CFB934009F8A31 /* Payment.swift in Sources */,
 				89198B6723CFC22B009F8A31 /* Animal.swift in Sources */,
 				89D37D952420A6570055C0DC /* LoginScreen.swift in Sources */,
+				8983BD8824211B5B003A30DF /* SettingsScreen.swift in Sources */,
 				89820BA923D0D8CF0085F2F5 /* Bank.swift in Sources */,
 				892A01EE23D0CC8700660BCE /* Address.swift in Sources */,
 				898CFB3123D0B72B006A8069 /* User.swift in Sources */,
