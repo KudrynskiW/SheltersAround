@@ -45,6 +45,7 @@
 		89820BA923D0D8CF0085F2F5 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BA823D0D8CF0085F2F5 /* Bank.swift */; };
 		89820BAD23D0DFAD0085F2F5 /* Institution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BAC23D0DFAD0085F2F5 /* Institution.swift */; };
 		898CFB3123D0B72B006A8069 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB3023D0B72B006A8069 /* User.swift */; };
+		89D37D952420A6570055C0DC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37D942420A6570055C0DC /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		89820BA823D0D8CF0085F2F5 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		89820BAC23D0DFAD0085F2F5 /* Institution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Institution.swift; sourceTree = "<group>"; };
 		898CFB3023D0B72B006A8069 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		89D37D942420A6570055C0DC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			children = (
 				89198B5923CFB351009F8A31 /* Controller */,
 				89198B5823CFB348009F8A31 /* View */,
+				89D37D942420A6570055C0DC /* LoginScreen.swift */,
 			);
 			path = LoginScreen;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				89198B2223CFB244009F8A31 /* SceneDelegate.swift in Sources */,
 				89198B6323CFB934009F8A31 /* Payment.swift in Sources */,
 				89198B6723CFC22B009F8A31 /* Animal.swift in Sources */,
+				89D37D952420A6570055C0DC /* LoginScreen.swift in Sources */,
 				89820BA923D0D8CF0085F2F5 /* Bank.swift in Sources */,
 				8949835823E1D3A700D350C4 /* CatalogScreenController.swift in Sources */,
 				895A740B23D761E1006BF8C2 /* NavigationTabBar.swift in Sources */,
