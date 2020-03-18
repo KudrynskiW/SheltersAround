@@ -8,10 +8,11 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
-struct Institution {
+struct Institution: Identifiable {
     let id: UUID
-    var logo: UIImage?
+    var logo: Image?
     var form: String
     var name: String
     var description: String
@@ -20,7 +21,7 @@ struct Institution {
     var bank: Bank?
     var animals: [Animal]?
     
-    init(_ logo: UIImage? = nil,_ name: String,_ form: String,_ description: String,_ address: Address,_ contact: Contact,_ bank: Bank? = nil,_ animals: [Animal]? = nil) {
+    init(_ logo: Image? = nil,_ name: String,_ form: String,_ description: String,_ address: Address,_ contact: Contact,_ bank: Bank? = nil,_ animals: [Animal]? = nil) {
         self.id = UUID.init()
         self.logo = logo
         self.form = form
@@ -32,3 +33,5 @@ struct Institution {
         self.animals = animals
     }
 }
+
+let exampleInstitution = Institution(Image("generic-image-placeholder"), "Example", "TOZ", "This is example institution with details filled as you can see. This is example institution with details filled as you can see.", exampleAddress, exampleContact, nil, nil)

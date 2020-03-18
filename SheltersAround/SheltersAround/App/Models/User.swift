@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct User {
+struct User: Identifiable {
     let id: UUID
     let email: String
     var phone: String?

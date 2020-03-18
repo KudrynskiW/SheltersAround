@@ -30,6 +30,7 @@
 		898CFB3123D0B72B006A8069 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB3023D0B72B006A8069 /* User.swift */; };
 		89D37D952420A6570055C0DC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37D942420A6570055C0DC /* LoginScreen.swift */; };
 		89D37D972420DA7E0055C0DC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37D962420DA7E0055C0DC /* HomeScreen.swift */; };
+		89FE97482421FE5F000A3326 /* CatalogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE97472421FE5F000A3326 /* CatalogScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		898CFB3023D0B72B006A8069 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		89D37D942420A6570055C0DC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		89D37D962420DA7E0055C0DC /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		89FE97472421FE5F000A3326 /* CatalogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				8983BD8724211B5B003A30DF /* SettingsScreen.swift */,
 				89D37D962420DA7E0055C0DC /* HomeScreen.swift */,
 				89D37D942420A6570055C0DC /* LoginScreen.swift */,
+				89FE97472421FE5F000A3326 /* CatalogScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				89820BA923D0D8CF0085F2F5 /* Bank.swift in Sources */,
 				892A01EE23D0CC8700660BCE /* Address.swift in Sources */,
 				898CFB3123D0B72B006A8069 /* User.swift in Sources */,
+				89FE97482421FE5F000A3326 /* CatalogScreen.swift in Sources */,
 				89D37D972420DA7E0055C0DC /* HomeScreen.swift in Sources */,
 				89820BAD23D0DFAD0085F2F5 /* Institution.swift in Sources */,
 			);

@@ -19,3 +19,5 @@ struct Contact: Equatable {
         self.emailAddress = emailAdress
     }
 }
+
+let exampleContact = Contact("Wojciech", ["123456789"], "wojciech@kudrynski.pl")

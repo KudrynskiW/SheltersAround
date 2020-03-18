@@ -28,8 +28,6 @@ struct LoginScreen: View {
                     .padding(.bottom, self.userEditing ? 0 : UIScreen.main.bounds.height * 0.1)
                     .foregroundColor(.blue)
                     .hueRotation(.degrees(self.rotateImage))
-                
-                //Spacer()
                     
                 VStack {
                     HStack {
@@ -109,6 +107,7 @@ struct LoginScreen: View {
                 }
             }
             .edgesIgnoringSafeArea(.top)
+            
         }
     }
 }
@@ -117,7 +116,6 @@ struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             LoginScreen()
-            LoginScreen(userEditing: true)
         }
     }
 }

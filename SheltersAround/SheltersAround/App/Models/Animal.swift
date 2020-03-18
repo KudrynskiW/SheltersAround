@@ -8,11 +8,12 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
-struct Animal: Equatable {
+struct Animal: Identifiable {
     let id: UUID
     let institutionId: UUID
-    var pictures: [UIImage]?
+    var pictures: [Image]?
     let type: String
     let name: String
     let age: Int
@@ -20,7 +21,7 @@ struct Animal: Equatable {
     var marks: [String]?
     var description: String
     
-    init(_ institutionId: UUID,_ pictures: [UIImage]? = nil,_ type: String,_ name: String,
+    init(_ institutionId: UUID,_ pictures: [Image]? = nil,_ type: String,_ name: String,
          _ age: Int,_ size: String,_ marks: [String]? = nil,_ description: String) {
         self.id = UUID.init()
         self.institutionId = institutionId

@@ -23,3 +23,5 @@ struct Address: Equatable {
         self.country = country
     }
 }
+
+let exampleAddress = Address("Street name", "1", "Wroclaw", "55-040", "Poland")
