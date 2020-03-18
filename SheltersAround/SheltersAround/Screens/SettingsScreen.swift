@@ -17,6 +17,10 @@ struct SettingsScreen: View {
     
     var body: some View {
         VStack {
+
+            Toggle(isOn: $darkModeToggle) {
+                Text("Dark mode")
+            }.padding()
             
             HStack {
                 Text("Language")
@@ -26,9 +30,10 @@ struct SettingsScreen: View {
                         self.showLanguagePicker.toggle()
                     }
                 }) {
-                    Text(self.languages[self.languageChoice] + " >")
+                    Text(self.languages[self.languageChoice] + (self.showLanguagePicker ? " ↓" : " →"))
+                        
                 }
-            }.padding([.horizontal, .top])
+            }.padding([.horizontal])
             
             if(self.showLanguagePicker) {
                 Picker(selection: $languageChoice, label: Text("")) {
@@ -41,12 +46,6 @@ struct SettingsScreen: View {
                 .fixedSize()
                 .padding(.horizontal)
             }
-            
-            
-            Toggle(isOn: $darkModeToggle) {
-                Text("Dark mode")
-            }.padding()
-            
             
             
             

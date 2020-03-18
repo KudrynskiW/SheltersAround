@@ -20,4 +20,4 @@ struct Contact: Equatable {
     }
 }
 
-let exampleContact = Contact("Wojciech", ["123456789"], "wojciech@kudrynski.pl")
+let exampleContact = Contact("Wojciech", ["123456789", "987654321"], "wojciech@kudrynski.pl")
