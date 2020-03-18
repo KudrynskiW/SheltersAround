@@ -7,11 +7,12 @@
 //
 
 import XCTest
+import SwiftUI
 
 @testable import SheltersAround
 
 class InstitutionTests: XCTestCase {
-    let dummyLogo: UIImage? = UIImage()
+    let dummyLogo: Image? = Image("generic-image-placeholder")
     let dummyForm: String = "TOZ"
     let dummyName: String = "Example Name"
     let dummyDescription: String = "Optional institution description."

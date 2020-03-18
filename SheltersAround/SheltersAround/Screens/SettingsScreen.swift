@@ -22,7 +22,9 @@ struct SettingsScreen: View {
                 Text("Language")
                 Spacer()
                 Button(action: {
-                    self.showLanguagePicker.toggle()
+                    withAnimation {
+                        self.showLanguagePicker.toggle()
+                    }
                 }) {
                     Text(self.languages[self.languageChoice] + " >")
                 }

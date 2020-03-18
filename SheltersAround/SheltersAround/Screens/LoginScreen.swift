@@ -46,16 +46,14 @@ struct LoginScreen: View {
                             withAnimation { self.userEditing = false }
                         })
                             .keyboardType(.default)
-                        
-                    }
-                    .onTapGesture {
-                        withAnimation { self.userEditing = true }
+                        .onTapGesture {
+                            withAnimation { self.userEditing = true }
+                        }
                     }
                     .padding(10)
                     .overlay(
                         RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1)
                     )
-                    
                     
                     HStack {
                         Spacer()

@@ -7,12 +7,13 @@
 //
 
 import XCTest
-import UIKit
+import SwiftUI
+
 @testable import SheltersAround
 
 class AnimalTests: XCTestCase {
     let dummyInstitutionId: UUID = UUID.init()
-    let dummyPictures: [UIImage] = [UIImage(), UIImage()]
+    let dummyPictures: [Image] = [Image("generic-image-placeholder"), Image("generic-image-placeholder")]
     let dummyType: String = "Dog"
     let dummyName: String = "Nero"
     let dummyAge: Int = 12

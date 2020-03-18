@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
-struct Animal: Identifiable {
+struct Animal: Equatable, Identifiable {
     let id: UUID
     let institutionId: UUID
     var pictures: [Image]?

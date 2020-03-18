@@ -31,9 +31,9 @@ struct HomeScreen: View {
                 Button(action: {
                     //
                 }) {
-                    //NavigationLink(destination: HomeScreen(loggedUser: User(self.userEmail))) {
+                    NavigationLink(destination: CatalogScreen()) {
                             HomeScreenMenuButtonStyle(title: "CATALOG", titleColor: .white, bgColor: .blue, image: "folder")
-                    //}
+                    }
                 }
                 
                 Spacer()

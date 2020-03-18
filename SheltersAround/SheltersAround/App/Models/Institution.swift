@@ -34,4 +34,10 @@ struct Institution: Identifiable {
     }
 }
 
-let exampleInstitution = Institution(Image("generic-image-placeholder"), "Example", "TOZ", "This is example institution with details filled as you can see. This is example institution with details filled as you can see.", exampleAddress, exampleContact, nil, nil)
+let exampleInstitution1 = Institution(Image("generic-image-placeholder"), "Example", "TOZ", "This is example institution with details filled as you can see. This is example institution with details filled as you can see.", exampleAddress, exampleContact, nil, nil)
+
+let exampleInstitution2 = Institution(Image("generic-image-placeholder"), "NotExample", "TOZ", "This is example institution with details filled as you can see. This is example institution with details filled as you can see.", exampleAddress, exampleContact, nil, nil)
+
+let exampleInstitution3 = Institution(Image("generic-image-placeholder"), "Cris", "TOZ", "This is example institution with details filled as you can see. This is example institution with details filled as you can see.", exampleAddress, exampleContact, nil, nil)
+
+let exampleInstitutionArray = [exampleInstitution1, exampleInstitution2, exampleInstitution3]
