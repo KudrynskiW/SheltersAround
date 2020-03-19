@@ -15,11 +15,11 @@ struct HomeScreen: View {
         VStack {
             Image("Logo250x250")
                 .resizable()
-                .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.width * 0.4)
+                .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.width * 0.2)
                 .foregroundColor(.blue)
                 .padding(.top)
             Text("Welcome \(self.loggedUser.email)!")
-                .padding()
+                .padding(.horizontal)
             
             Text("I'm happy that you are using this application :-)\n\nYou can go to Catalog option for browse Institution registered in our database. Please, use Settings button to get chance to change your Language, password or appearance of application.\n\nHave fun during helping pets!\nWojciech >wojciech@kudrynski.pl<")
                 .padding()

@@ -65,9 +65,13 @@ struct CatalogScreen: View {
                 Spacer()
             }
             
-            List(self.arrayForList.filter { $0.form.hasPrefix(searchTerm) || $0.name.hasPrefix(searchTerm) || searchTerm == "" }) { institution in
-                CatalogListCell(institutionPicked: institution)
-            }.resignKeyboardOnDragGesture()
+            List(self.arrayForList.filter { $0.form.contains(searchTerm) || $0.name.contains(searchTerm) || searchTerm == "" }) { institution in
+                
+                NavigationLink(destination: InstitutionDetails(institution: institution)) {
+                    CatalogListCell(institutionPicked: institution)
+                }
+                
+            }
             
             Spacer()
         }.navigationBarTitle("Institutions Catalog", displayMode: .inline)

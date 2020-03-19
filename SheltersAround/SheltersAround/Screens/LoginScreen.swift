@@ -23,7 +23,7 @@ struct LoginScreen: View {
                 
                 Image("Logo250x250")
                     .resizable()
-                    .frame(width: UIScreen.main.bounds.width * 0.5, height: UIScreen.main.bounds.width * 0.5)
+                    .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.width * 0.4)
                     .padding(.top, UIScreen.main.bounds.height * 0.05)
                     .padding(.bottom, self.userEditing ? 0 : UIScreen.main.bounds.height * 0.1)
                     .foregroundColor(.blue)
@@ -75,7 +75,11 @@ struct LoginScreen: View {
                     
                     Button(action: {
                         //
-                    }) { LoginScreenButtonStyle(title: "LOGIN", colorScheme: .blue) }
+                    }) {
+                        NavigationLink(destination: HomeScreen(loggedUser: User(self.userEmail))) {
+                                LoginScreenButtonStyle(title: "LOGIN", colorScheme: .blue)
+                        }
+                    }
                     
                     
                     Button(action: {
@@ -114,6 +118,7 @@ struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             LoginScreen()
+            LoginScreen().previewDevice("iPhone 6s")
         }
     }
 }
