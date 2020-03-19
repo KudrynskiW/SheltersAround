@@ -71,8 +71,11 @@ struct InstitutionDetails: View {
                     }
                 }.padding()
                 
-                List(exampleAnimalArray) { animal in
-                    AnimalCell(animal: animal)
+                List(institution.animals ?? []) { animal in
+                    NavigationLink(destination: AnimalDetails(animal: animal)) {
+                        AnimalCell(animal: animal)
+                    }
+                    
                 }
                 .frame(height: UIScreen.main.bounds.height * 0.5)
                 

@@ -20,6 +20,7 @@
 		89820BAD23D0DFAD0085F2F5 /* Institution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820BAC23D0DFAD0085F2F5 /* Institution.swift */; };
 		8983BD8824211B5B003A30DF /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8983BD8724211B5B003A30DF /* SettingsScreen.swift */; };
 		898CFB3123D0B72B006A8069 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CFB3023D0B72B006A8069 /* User.swift */; };
+		89952BCF242355B6005030E5 /* AnimalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89952BCE242355B6005030E5 /* AnimalDetails.swift */; };
 		89D37D952420A6570055C0DC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37D942420A6570055C0DC /* LoginScreen.swift */; };
 		89D37D972420DA7E0055C0DC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D37D962420DA7E0055C0DC /* HomeScreen.swift */; };
 		89FE97482421FE5F000A3326 /* CatalogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE97472421FE5F000A3326 /* CatalogScreen.swift */; };
@@ -55,6 +56,7 @@
 		89820BAC23D0DFAD0085F2F5 /* Institution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Institution.swift; sourceTree = "<group>"; };
 		8983BD8724211B5B003A30DF /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		898CFB3023D0B72B006A8069 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		89952BCE242355B6005030E5 /* AnimalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetails.swift; sourceTree = "<group>"; };
 		89D37D942420A6570055C0DC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		89D37D962420DA7E0055C0DC /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		89FE97472421FE5F000A3326 /* CatalogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogScreen.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		89198B4823CFB2A3009F8A31 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				89952BCE242355B6005030E5 /* AnimalDetails.swift */,
 				89FE974D242223D7000A3326 /* InstitutionDetails.swift */,
 				89FE97472421FE5F000A3326 /* CatalogScreen.swift */,
 				8983BD8724211B5B003A30DF /* SettingsScreen.swift */,
@@ -261,6 +264,7 @@
 				89198B2A23CFB244009F8A31 /* SheltersAround.xcdatamodeld in Sources */,
 				89FE974E242223D7000A3326 /* InstitutionDetails.swift in Sources */,
 				89198B2223CFB244009F8A31 /* SceneDelegate.swift in Sources */,
+				89952BCF242355B6005030E5 /* AnimalDetails.swift in Sources */,
 				89198B6323CFB934009F8A31 /* Payment.swift in Sources */,
 				89198B6723CFC22B009F8A31 /* Animal.swift in Sources */,
 				89D37D952420A6570055C0DC /* LoginScreen.swift in Sources */,
