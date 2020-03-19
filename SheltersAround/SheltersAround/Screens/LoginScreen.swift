@@ -14,6 +14,8 @@ struct LoginScreen: View {
     @State var userEditing = false
     @State var startOpacity = 0.0
     @State var rotateImage = 0.0
+    @State var forgotPassword = false
+    
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -41,26 +43,62 @@ struct LoginScreen: View {
                         RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1)
                     )
                     
-                    HStack {
-                        SecureField("Enter your password here..", text: $userPassword, onCommit: {
-                            withAnimation { self.userEditing = false }
-                        })
-                            .keyboardType(.default)
-                        .onTapGesture {
-                            withAnimation { self.userEditing = true }
+                    if(!forgotPassword) {
+                        HStack {
+                            SecureField("Enter your password here..", text: $userPassword, onCommit: {
+                                withAnimation { self.userEditing = false }
+                            })
+                                .keyboardType(.default)
+                                .onTapGesture {
+                                    withAnimation { self.userEditing = true }
+                            }
                         }
-                    }
-                    .padding(10)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1)
-                    )
-                    
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            //open forgot password screen
-                        }) {
-                            Text("Forgot password?")
+                        .padding(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1)
+                        )
+                        
+                        
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                withAnimation {
+                                    self.forgotPassword.toggle()
+                                }
+                            }) {
+                                Text("Forgot password?")
+                            }
+                        }
+                    } else {
+                        HStack {
+                            Button(action: {
+                                //RESET PASSWORD CODE
+                            }) {
+                                Text("RESET PASSWORD")
+                                    .padding(5)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.blue, lineWidth: 1)
+                                )
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                withAnimation {
+                                    UIApplication.shared.endEditing(true)
+                                    self.forgotPassword.toggle()
+                                    self.userEditing = false
+                                }
+                            }) {
+                                Text("CANCEL")
+                                    .foregroundColor(.red)
+                                    .padding(5)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.red, lineWidth: 1)
+                                )
+                            }
                         }
                     }
                 }
@@ -118,6 +156,7 @@ struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             LoginScreen()
+            LoginScreen(forgotPassword: true)
             LoginScreen().previewDevice("iPhone 6s")
         }
     }

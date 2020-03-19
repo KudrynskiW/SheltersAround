@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Bank: Equatable {
+struct Bank {
     let accountHolderName: String
     let accountHolderAddress: Address
     let accountNumber: String

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct InstitutionDetails: View {
     @State private var showContactDetails = false
@@ -14,53 +15,65 @@ struct InstitutionDetails: View {
     
     var body: some View {
         VStack {
-            institution.logo?
-                .resizable()
-                .frame(width: UIScreen.main.bounds.width * 0.6, height: UIScreen.main.bounds.width * 0.6)
-                .padding()
-            
-            VStack(alignment: .leading) {
-                Text(institution.form + " " + institution.name)
-                    .font(.title)
-                Text(institution.description)
-            }.padding(.horizontal)
+            InstitutionMapView(coordinate: institution.address.location)
+                .frame(height: UIScreen.main.bounds.width * 0.5)
             
             VStack {
-                Button(action: {
-                    withAnimation {
-                        self.showContactDetails.toggle()
-                    }
-                }) {
-                    Text("SHOW CONTACT DETAILS")
-                    .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.05)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .shadow(color: .gray, radius: 2, x: 1, y: 0)
-                }
-                
-                if(self.showContactDetails) {
-                    VStack {
-                        Text(institution.form + " " + institution.name)
-                        Text(institution.address.streetName + " " + institution.address.streetNumber)
-                        Text(institution.address.postalCode + " " + institution.address.city)
-                        ForEach(institution.contact.phoneNumbers, id: \.self) { number in
-                            Text(number)
-                        }
-                        Text(institution.contact.emailAddress)
-                    }
-                    .frame(width: UIScreen.main.bounds.width * 0.8)
-                    .padding()
+                institution.logo?
+                    .resizable()
+                    .frame(width: UIScreen.main.bounds.width * 0.5, height: UIScreen.main.bounds.width * 0.5)
+                    .clipShape(Circle())
                     .overlay(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.blue, lineWidth: 2)
+                        Circle().stroke(Color.blue, lineWidth: 1)
                     )
-                    .padding(.vertical)
-                }
-            }.padding()
-            
-            
-            Spacer()
+                    .shadow(radius: 4)
+                    .padding(.bottom)
+                    
+                
+                
+                VStack(alignment: .leading) {
+                    Text(institution.form + " " + institution.name)
+                        .font(.title)
+                    Text(institution.description)
+                }.padding(.horizontal)
+                
+                VStack {
+                    Button(action: {
+                        withAnimation {
+                            self.showContactDetails.toggle()
+                        }
+                    }) {
+                        Text("SHOW CONTACT DETAILS")
+                            .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.05)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .shadow(color: .gray, radius: 2, x: 1, y: 0)
+                    }
+                    
+                    if(self.showContactDetails) {
+                        VStack {
+                            Text(institution.form + " " + institution.name)
+                            Text(institution.address.streetName + " " + institution.address.streetNumber)
+                            Text(institution.address.postalCode + " " + institution.address.city)
+                            ForEach(institution.contact.phoneNumbers, id: \.self) { number in
+                                Text(number)
+                            }
+                            Text(institution.contact.emailAddress)
+                        }
+                        .frame(width: UIScreen.main.bounds.width * 0.8)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.blue, lineWidth: 2)
+                        )
+                            .padding(.vertical)
+                    }
+                }.padding()
+                
+                
+                Spacer()
+            }.offset(y: UIScreen.main.bounds.width * -0.15)
         }.navigationBarTitle("Institution Details", displayMode: .inline)
     }
 }
@@ -71,5 +84,25 @@ struct InstitutionDetails_Previews: PreviewProvider {
             InstitutionDetails(institution: exampleInstitution1)
         }
         
+    }
+}
+
+struct InstitutionMapView: UIViewRepresentable {
+    var coordinate: CLLocationCoordinate2D
+    
+    func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<InstitutionMapView>) {
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let region = MKCoordinateRegion(center: coordinate, span: span)
+        uiView.setRegion(region, animated: true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        uiView.addAnnotation(annotation)
+    }
+    
+    func makeUIView(context: Context) -> MKMapView {
+        let mapView = MKMapView(frame: .zero)
+        mapView.isUserInteractionEnabled = false
+        return mapView
     }
 }
