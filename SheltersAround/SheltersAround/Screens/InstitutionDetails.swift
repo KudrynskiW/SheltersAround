@@ -14,7 +14,7 @@ struct InstitutionDetails: View {
     var institution: Institution
     
     var body: some View {
-        VStack {
+        ScrollView {
             InstitutionMapView(coordinate: institution.address.location)
                 .frame(height: UIScreen.main.bounds.width * 0.5)
             
@@ -44,7 +44,7 @@ struct InstitutionDetails: View {
                         }
                     }) {
                         Text("SHOW CONTACT DETAILS")
-                            .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.05)
+                            .frame(width: UIScreen.main.bounds.width * 0.8, height: UIScreen.main.bounds.height * 0.05)
                             .background(Color.blue)
                             .foregroundColor(.white)
                             .cornerRadius(10)
@@ -61,7 +61,7 @@ struct InstitutionDetails: View {
                             }
                             Text(institution.contact.emailAddress)
                         }
-                        .frame(width: UIScreen.main.bounds.width * 0.8)
+                        .frame(width: UIScreen.main.bounds.width * 0.7)
                         .padding()
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
@@ -70,6 +70,11 @@ struct InstitutionDetails: View {
                             .padding(.vertical)
                     }
                 }.padding()
+                
+                List(exampleAnimalArray) { animal in
+                    AnimalCell(animal: animal)
+                }
+                .frame(height: UIScreen.main.bounds.height * 0.5)
                 
                 
                 Spacer()
@@ -83,7 +88,30 @@ struct InstitutionDetails_Previews: PreviewProvider {
         NavigationView {
             InstitutionDetails(institution: exampleInstitution1)
         }
+    }
+}
+
+struct AnimalCell: View {
+    var animal: Animal
+    
+    var body: some View {
         
+        HStack {
+            animal.pictures?.first?
+                .resizable()
+                .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.width * 0.2)
+            
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(animal.name + " (\(animal.age) years)")
+                        .fontWeight(.bold)
+                    Spacer()
+                    Text(animal.type)
+                }.padding(.bottom, 1)
+                Text(animal.description)
+                .lineLimit(3)
+            }
+        }.padding(5)
     }
 }
 
