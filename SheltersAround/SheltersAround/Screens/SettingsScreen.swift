@@ -59,10 +59,13 @@ struct SettingsScreen: View {
                 
                 Spacer()
                 
-                //NavigationLink(destination: HomeScreen(loggedUser: User(self.userEmail))) {
-                        HomeScreenMenuButtonStyle(title: "LOGOUT", titleColor: .white, bgColor: .red, image: "lock.open")
-                            
-                //}
+                Button(action: {
+                    
+                }) {
+                    HomeScreenMenuButtonStyle(title: "LOGOUT", titleColor: .white, bgColor: .red, image: "lock.open")
+                }
+                        
+                
             }.padding()
             
         }

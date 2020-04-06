@@ -23,7 +23,12 @@ struct AnimalDetails: View {
                 Text(animal.name)
                 .font(.title)
                 .fontWeight(.bold)
-            }
+            }.padding(.top)
+            
+            Spacer()
+                .frame(width: UIScreen.main.bounds.width * 1.0, height: 2)
+                .background(Color.black)
+                .padding(.vertical)
             
             VStack(alignment: .leading) {
                 Text("Type: \(animal.type)")
@@ -54,7 +59,7 @@ struct AnimalDetails: View {
 
             Spacer()
         }
-        .padding()
+        .padding(5)
         .navigationBarTitle("Animal Details", displayMode: .inline)
     }
 }

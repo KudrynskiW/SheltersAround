@@ -48,7 +48,6 @@ struct HomeScreen: View {
                 
             }.padding()
 
-            Spacer()
         }
         .navigationBarTitle("Home", displayMode: .inline)
         .navigationBarBackButtonHidden(true)
@@ -57,7 +56,10 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen(loggedUser: User("example@user.com"))
+        Group {
+            HomeScreen(loggedUser: User("example@user.com"))
+            HomeScreen(loggedUser: User("example@user.com")).previewDevice("iPhone 6s")
+        }
     }
 }
 

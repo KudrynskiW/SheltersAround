@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct LoginScreen: View {
+    @State var isUserLogged = false
     @State private var userEmail = ""
     @State private var userPassword = ""
     @State var userEditing = false
@@ -114,7 +115,7 @@ struct LoginScreen: View {
                     Button(action: {
                         //
                     }) {
-                        NavigationLink(destination: HomeScreen(loggedUser: User(self.userEmail))) {
+                        NavigationLink(destination: HomeScreen(loggedUser: User(self.userEmail)), isActive: self.$isUserLogged) {
                                 LoginScreenButtonStyle(title: "LOGIN", colorScheme: .blue)
                         }
                     }

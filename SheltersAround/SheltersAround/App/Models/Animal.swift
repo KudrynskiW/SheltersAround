@@ -39,6 +39,6 @@ let exampleAnimal1 = Animal(UUID.init(), [Image("generic-image-placeholder"), Im
 
 let exampleAnimal2 = Animal(UUID.init(), [Image("generic-image-placeholder"), Image("generic-image-placeholder")], "Cat", "Kicia", 12, "M", ["Tricolor", "long hair"], "Missing sweet cat, always near one she loved. I've made this app to tribute to her life and serve. Missing sweet cat, always near one she loved. I've made this app to tribute to her life and serve.")
 
-let exampleAnimal3 = Animal(UUID.init(), [Image("generic-image-placeholder"), Image("generic-image-placeholder")], "Dog", "Nero", 12, "XL", ["Brown eyebrows", "brown legs"], "Cutties dog you had ever seen. I've made this app to tribute to his life and serve.")
+let exampleAnimal3 = Animal(UUID.init(), [Image("generic-image-placeholder")], "Dog", "Nero", 12, "XL", ["Brown eyebrows", "brown legs"], "Cutties dog you had ever seen. I've made this app to tribute to his life and serve.")
 
 let exampleAnimalArray = [exampleAnimal1, exampleAnimal2, exampleAnimal3, exampleAnimal1, exampleAnimal2, exampleAnimal3]
